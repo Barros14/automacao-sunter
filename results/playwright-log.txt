@@ -1,0 +1,263 @@
+{"level":30,"time":"2025-08-31T10:47:16.317Z","pid":11772,"hostname":"BarrosQuarto","msg":"Listening on 127.0.0.1:51919"}
+(node:11772) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-31T10:47:16.363Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:47:17.246Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-08-31T10:47:17.249Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:47:17.249Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-31T10:47:17.262Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-31T10:47:17.264Z","pid":11772,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8b1a3542fba4bbc4a297e138e01540f5\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=7ded1f24-130a-4ec1-8506-63c9dd687ee1\"}"}
+{"level":30,"time":"2025-08-31T10:47:17.303Z","pid":11772,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=3352bce5-2cf1-4421-85e3-6bc164325c67 to 10000"}
+{"level":30,"time":"2025-08-31T10:47:17.303Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=3352bce5-2cf1-4421-85e3-6bc164325c67"}
+{"level":30,"time":"2025-08-31T10:47:18.061Z","pid":11772,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-31T10:47:18.061Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:47:19.153Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-31T10:47:19.162Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-08-31T10:47:23.941Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method goTo"}
+{"level":30,"time":"2025-08-31T10:47:23.951Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:23.952Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"email\"] in page."}
+{"level":30,"time":"2025-08-31T10:47:25.065Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:25.077Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:25.077Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"password\"] in page."}
+{"level":30,"time":"2025-08-31T10:47:26.128Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:29.140Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-31T10:47:29.141Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Entrar in page."}
+{"level":30,"time":"2025-08-31T10:47:30.255Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-08-31T10:47:30.381Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-31T10:47:30.382Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Casa da Construção in page."}
+{"level":30,"time":"2025-08-31T10:47:30.399Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-31T10:47:30.411Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-08-31T10:47:30.421Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is disabled, return Locator: text=Casa da Construção in page."}
+{"level":30,"time":"2025-08-31T10:47:30.434Z","pid":11772,"hostname":"BarrosQuarto","msg":"Locator count is 1"}
+{"level":30,"time":"2025-08-31T10:47:30.499Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-08-31T10:47:30.517Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:47:30.518Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:47:30.941Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:47:33.963Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:47:33.963Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:47:34.110Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:47:34.121Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-31T10:47:34.147Z","pid":11772,"hostname":"BarrosQuarto","msg":"Removed page=e9511a7b-2a33-49d1-8f22-14f0006a276d from context=3352bce5-2cf1-4421-85e3-6bc164325c67 page stack"}
+{"level":30,"time":"2025-08-31T10:47:34.648Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-31T10:47:34.672Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:47:34.673Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:47:34.687Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:47:34.687Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:47:34.698Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:47:35.482Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-08-31T10:47:35.482Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:47:35.482Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-31T10:47:35.500Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-31T10:47:35.500Z","pid":11772,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8dd0f37eb99b4a7bbee5a15cf0042781\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=c4355391-ea3a-4d62-b142-bca24c3e94f2\"}"}
+{"level":30,"time":"2025-08-31T10:47:35.733Z","pid":11772,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=cf7d685d-076f-40fa-8170-97b83f8ed0cd to 10000"}
+{"level":30,"time":"2025-08-31T10:47:35.734Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=cf7d685d-076f-40fa-8170-97b83f8ed0cd"}
+{"level":30,"time":"2025-08-31T10:47:36.696Z","pid":11772,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-31T10:47:36.696Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:47:37.739Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-31T10:47:37.747Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-08-31T10:47:42.697Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method goTo"}
+{"level":30,"time":"2025-08-31T10:47:42.706Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:47:43.319Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-08-31T10:47:43.320Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:47:43.320Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-31T10:47:43.332Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-31T10:47:43.332Z","pid":11772,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@1348fa6bf187e5f6b4fe33693e0ea433\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=a7b5713b-6d63-4be0-9cb2-a5a0c3bc10f9\"}"}
+{"level":30,"time":"2025-08-31T10:47:43.352Z","pid":11772,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=a5ee25a3-b0d7-4c12-aa81-33be6aafb6dd to 10000"}
+{"level":30,"time":"2025-08-31T10:47:43.352Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=a5ee25a3-b0d7-4c12-aa81-33be6aafb6dd"}
+{"level":30,"time":"2025-08-31T10:47:44.039Z","pid":11772,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-31T10:47:44.039Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:47:49.070Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-31T10:47:52.087Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:52.088Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"email\"] in page."}
+{"level":30,"time":"2025-08-31T10:47:52.197Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:52.210Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:52.211Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"password\"] in page."}
+{"level":30,"time":"2025-08-31T10:47:52.267Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:47:55.284Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-31T10:47:55.284Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Entrar in page."}
+{"level":30,"time":"2025-08-31T10:47:55.369Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-08-31T10:47:55.382Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-31T10:47:55.383Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Senha é obrigatória in page."}
+{"level":30,"time":"2025-08-31T10:48:05.392Z","pid":11772,"hostname":"BarrosQuarto","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Senha é obrigatória') to be visible[22m
+
+    at waitForElementState (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13137:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-08-31T10:48:05.399Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:05.399Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:48:05.544Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:05.592Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:05.592Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\robotframework-browser-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:48:05.743Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:05.756Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-31T10:48:05.781Z","pid":11772,"hostname":"BarrosQuarto","msg":"Removed page=8292b865-b2a1-469a-9605-a3a6fa5f0e59 from context=a5ee25a3-b0d7-4c12-aa81-33be6aafb6dd page stack"}
+{"level":30,"time":"2025-08-31T10:48:06.196Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-08-31T10:48:06.225Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.233Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.241Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.245Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.249Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.252Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.260Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.267Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.283Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=cf7d685d-076f-40fa-8170-97b83f8ed0cd"}
+{"level":30,"time":"2025-08-31T10:48:06.283Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changing current active page: page=26d9504d-c93a-41f9-b1c5-e47b3422214a"}
+{"level":30,"time":"2025-08-31T10:48:06.283Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:48:06.299Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-31T10:48:06.325Z","pid":11772,"hostname":"BarrosQuarto","msg":"Removed page=d798f0ad-2e2c-4368-a259-84863dfb2fd2 from context=cf7d685d-076f-40fa-8170-97b83f8ed0cd page stack"}
+{"level":30,"time":"2025-08-31T10:48:06.485Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-31T10:48:06.529Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.529Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:06.538Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-08-31T10:48:06.539Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-08-31T10:48:06.547Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:06.547Z","pid":11772,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8dd0f37eb99b4a7bbee5a15cf0042781\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=c4355391-ea3a-4d62-b142-bca24c3e94f2\"}"}
+{"level":30,"time":"2025-08-31T10:48:06.601Z","pid":11772,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=11d408fc-aea2-46b3-98fd-dd52d3a11f99 to 10000"}
+{"level":30,"time":"2025-08-31T10:48:06.602Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=11d408fc-aea2-46b3-98fd-dd52d3a11f99"}
+{"level":30,"time":"2025-08-31T10:48:07.106Z","pid":11772,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-31T10:48:07.106Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:48:08.192Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:08.199Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-08-31T10:48:12.549Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method goTo"}
+{"level":30,"time":"2025-08-31T10:48:12.558Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:48:13.136Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-08-31T10:48:13.136Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:48:13.136Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-31T10:48:13.143Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:13.143Z","pid":11772,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b3c0478fe5470b5ddf531307b00fb97d\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=8ec05a45-b800-40ad-b7e4-256b37a7f13e\"}"}
+{"level":30,"time":"2025-08-31T10:48:13.218Z","pid":11772,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=4369444a-6541-4121-9763-3a896300f1e0 to 10000"}
+{"level":30,"time":"2025-08-31T10:48:13.218Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=4369444a-6541-4121-9763-3a896300f1e0"}
+{"level":30,"time":"2025-08-31T10:48:14.238Z","pid":11772,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-31T10:48:14.238Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:48:18.007Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:21.023Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:21.023Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"email\"] in page."}
+{"level":30,"time":"2025-08-31T10:48:21.135Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:21.147Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:21.147Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"password\"] in page."}
+{"level":30,"time":"2025-08-31T10:48:21.211Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:24.230Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-31T10:48:24.230Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Entrar in page."}
+{"level":30,"time":"2025-08-31T10:48:24.317Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-08-31T10:48:24.337Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-31T10:48:24.337Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Houve um erro crítico - Detalhe: Credenciais inválidas in page."}
+{"level":30,"time":"2025-08-31T10:48:24.719Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-08-31T10:48:24.728Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-08-31T10:48:24.729Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is disabled, return Locator: text=Houve um erro crítico - Detalhe: Credenciais inválidas in page."}
+{"level":30,"time":"2025-08-31T10:48:24.735Z","pid":11772,"hostname":"BarrosQuarto","msg":"Locator count is 1"}
+{"level":30,"time":"2025-08-31T10:48:24.776Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-08-31T10:48:24.798Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:24.799Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\robotframework-browser-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:48:25.126Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:28.147Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:28.147Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\robotframework-browser-screenshot-5.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:48:28.305Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:28.317Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-31T10:48:28.344Z","pid":11772,"hostname":"BarrosQuarto","msg":"Removed page=bbbdbd2b-7c0d-4aff-b0c1-6e8839f634cd from context=4369444a-6541-4121-9763-3a896300f1e0 page stack"}
+{"level":30,"time":"2025-08-31T10:48:28.768Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-08-31T10:48:29.616Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.623Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.626Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.628Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.635Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.638Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.643Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.646Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.652Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=11d408fc-aea2-46b3-98fd-dd52d3a11f99"}
+{"level":30,"time":"2025-08-31T10:48:29.652Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changing current active page: page=91f5905b-6259-415e-b118-dacd79a25bb0"}
+{"level":30,"time":"2025-08-31T10:48:29.652Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:48:29.656Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-31T10:48:29.675Z","pid":11772,"hostname":"BarrosQuarto","msg":"Removed page=e1ad90d7-ba7f-422a-9f13-f04f1a68d40d from context=11d408fc-aea2-46b3-98fd-dd52d3a11f99 page stack"}
+{"level":30,"time":"2025-08-31T10:48:29.840Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-31T10:48:29.944Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.944Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:48:29.961Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-08-31T10:48:29.962Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-08-31T10:48:29.977Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:29.977Z","pid":11772,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8dd0f37eb99b4a7bbee5a15cf0042781\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=c4355391-ea3a-4d62-b142-bca24c3e94f2\"}"}
+{"level":30,"time":"2025-08-31T10:48:29.993Z","pid":11772,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=19863354-bdfc-4c5d-aceb-1c7f9844141b to 10000"}
+{"level":30,"time":"2025-08-31T10:48:29.993Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=19863354-bdfc-4c5d-aceb-1c7f9844141b"}
+{"level":30,"time":"2025-08-31T10:48:31.141Z","pid":11772,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-31T10:48:31.142Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:48:32.321Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:32.329Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-08-31T10:48:38.595Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method goTo"}
+{"level":30,"time":"2025-08-31T10:48:38.609Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:48:39.033Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-08-31T10:48:39.033Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-08-31T10:48:39.033Z","pid":11772,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-08-31T10:48:39.071Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:39.071Z","pid":11772,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@e63388e1d17f29a1bfa1aadda2ed1f32\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=9a052252-842d-40de-9e46-4f47d6f40a94\"}"}
+{"level":30,"time":"2025-08-31T10:48:39.120Z","pid":11772,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=4afadbdd-ee80-4894-876b-07a1ed75451f to 10000"}
+{"level":30,"time":"2025-08-31T10:48:39.120Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=4afadbdd-ee80-4894-876b-07a1ed75451f"}
+{"level":30,"time":"2025-08-31T10:48:39.924Z","pid":11772,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-08-31T10:48:39.924Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:48:43.574Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-08-31T10:48:46.595Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:46.595Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"email\"] in page."}
+{"level":30,"time":"2025-08-31T10:48:46.701Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:46.715Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:46.715Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"password\"] in page."}
+{"level":30,"time":"2025-08-31T10:48:46.797Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-08-31T10:48:49.818Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-08-31T10:48:49.819Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Entrar in page."}
+{"level":30,"time":"2025-08-31T10:48:49.885Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-08-31T10:48:49.896Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-08-31T10:48:49.897Z","pid":11772,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Houve um erro crítico - Detalhe: Credenciais inválidas in page."}
+{"level":30,"time":"2025-08-31T10:48:59.905Z","pid":11772,"hostname":"BarrosQuarto","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('text=Houve um erro crítico - Detalhe: Credenciais inválidas') to be visible[22m
+
+    at waitForElementState (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13137:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-08-31T10:48:59.912Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:48:59.912Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\fail-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:49:00.057Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:49:00.091Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:49:00.091Z","pid":11772,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\robotframework-browser-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-08-31T10:49:00.238Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-08-31T10:49:00.246Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-08-31T10:49:00.264Z","pid":11772,"hostname":"BarrosQuarto","msg":"Removed page=28325226-d783-439a-a4a7-897478038010 from context=4afadbdd-ee80-4894-876b-07a1ed75451f page stack"}
+{"level":30,"time":"2025-08-31T10:49:00.584Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2025-08-31T10:49:00.626Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.636Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.642Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.645Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.649Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.660Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.666Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.681Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.692Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active context: context=19863354-bdfc-4c5d-aceb-1c7f9844141b"}
+{"level":30,"time":"2025-08-31T10:49:00.692Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changing current active page: page=ad412e56-b467-4594-a5dd-732760a636a4"}
+{"level":30,"time":"2025-08-31T10:49:00.692Z","pid":11772,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-08-31T10:49:00.699Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-08-31T10:49:00.723Z","pid":11772,"hostname":"BarrosQuarto","msg":"Removed page=6455678e-9103-419e-930a-639d3d77198a from context=19863354-bdfc-4c5d-aceb-1c7f9844141b page stack"}
+{"level":30,"time":"2025-08-31T10:49:00.887Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-08-31T10:49:00.979Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:00.979Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-31T10:49:02.051Z","pid":11772,"hostname":"BarrosQuarto","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-31T10:49:02.695Z","pid":11772,"hostname":"BarrosQuarto","msg":"End of node method closeAllBrowsers"}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-08-31T07:46:13.822617" rpa="false" schemaversion="5">
+<suite id="s1" name="TC02-login lojista" source="c:\Projeto Sunter\tests\login\TC02-login_lojista.robot">
+<test id="s1-t1" name="Login com Senha Incorreta" line="32">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-31T07:46:15.791708" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\browser\\traces\\temp\\ddb2a27a-603b-4978-9e8e-48e377f43666"}</msg>
+<msg time="2025-08-31T07:46:15.950178" level="INFO">Starting Browser process C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51810</msg>
+<msg time="2025-08-31T07:46:21.744103" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\browser\\traces\\temp\\ddb2a27a-603b-4978-9e8e-48e377f43666"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-31T07:46:15.787971" elapsed="5.956831"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-31T07:46:23.626278" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-08-31T07:46:23.626696" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-31T07:46:21.745433" elapsed="1.881674"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-08-31T07:46:28.788718" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/auth</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-08-31T07:46:23.627561" elapsed="5.161878"/>
+</kw>
+<status status="PASS" start="2025-08-31T07:46:15.784759" elapsed="13.005035"/>
+</kw>
+<kw name="Dado que estou na home page do site Cotar &amp; Contruir" owner="login_lojista">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-31T07:46:28.798843" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\browser\\traces\\temp\\2839b5cb-90b7-4a26-b19f-0c4b43e0cda9"}</msg>
+<msg time="2025-08-31T07:46:29.656441" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\browser\\traces\\temp\\2839b5cb-90b7-4a26-b19f-0c4b43e0cda9"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-31T07:46:28.797429" elapsed="0.859685"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-31T07:46:33.978529" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-08-31T07:46:33.979342" level="INFO">See also file:///C:/Projeto%20Sunter/playwright-log.txt for additional details.</msg>
+<msg time="2025-08-31T07:46:33.980250" level="FAIL">Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+</msg>
+<arg>url=${ENV}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-08-31T07:46:29.657727" elapsed="4.418862">Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-08-31T07:46:34.077581" elapsed="0.000853"/>
+</kw>
+<status status="FAIL" start="2025-08-31T07:46:28.796305" elapsed="5.282589">Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+</status>
+</kw>
+<kw name="Quando preencho as informações para login de lojista" owner="login_lojista">
+<arg>${USUARIO_LOJISTA}</arg>
+<arg>SenhaIncorreta12</arg>
+<status status="NOT RUN" start="2025-08-31T07:46:34.204030" elapsed="0.003760"/>
+</kw>
+<kw name="E clico em entrar" owner="login_lojista">
+<status status="NOT RUN" start="2025-08-31T07:46:34.562506" elapsed="0.001041"/>
+</kw>
+<kw name="Então aparece a mensagem de erro &quot;Houve um erro crítico - Detalhe: Credenciais inválidas&quot;" owner="login_lojista">
+<status status="NOT RUN" start="2025-08-31T07:46:34.838868" elapsed="0.004513"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-08-31T07:46:35.722347" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-08-31T07:46:35.723097" level="INFO">See also file:///C:/Projeto%20Sunter/playwright-log.txt for additional details.</msg>
+<msg time="2025-08-31T07:46:35.723599" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-08-31T07:46:35.526147" elapsed="0.204360">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-31T07:46:41.278218" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-31T07:46:35.731236" elapsed="5.547656"/>
+</kw>
+<status status="FAIL" start="2025-08-31T07:46:35.512756" elapsed="5.766614">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<msg time="2025-08-31T07:46:41.309561" level="INFO">Switching context to context=21937dd3-d112-4cf7-8363-92ed0a1fcd3c in CURRENT</msg>
+<msg time="2025-08-31T07:46:41.321626" level="INFO">Successfully changed active context: context=21937dd3-d112-4cf7-8363-92ed0a1fcd3c</msg>
+<msg time="2025-08-31T07:46:41.339371" level="INFO">Successfully closed Context</msg>
+<tag>LGN03</tag>
+<status status="FAIL" start="2025-08-31T07:46:15.782224" elapsed="25.498852">Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<doc>Teste de login do lojista no Cotar &amp; Construir</doc>
+<status status="FAIL" start="2025-08-31T07:46:13.855780" elapsed="27.493296"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">LGN03</stat>
+</tag>
+<suite>
+<stat name="TC02-login lojista" id="s1" pass="0" fail="1" skip="0">TC02-login lojista</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
