@@ -1,0 +1,54 @@
+{"level":30,"time":"2025-09-06T17:01:32.730Z","pid":10668,"hostname":"BarrosQuarto","msg":"Listening on 127.0.0.1:62367"}
+(node:10668) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-09-06T17:01:32.854Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-06T17:01:33.431Z","pid":10668,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-06T17:01:33.432Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-06T17:01:33.445Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-06T17:01:33.432Z","pid":10668,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-06T17:01:33.445Z","pid":10668,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@ff08b4e8e7c497ac4e87e1fa7505ae4f\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=dcf5de92-c247-45b4-9c3f-89dec1d99c99\"}"}
+{"level":30,"time":"2025-09-06T17:01:33.537Z","pid":10668,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=a6887c45-69f0-4a29-9f34-be123cfa4e7d to 10000"}
+{"level":30,"time":"2025-09-06T17:01:33.537Z","pid":10668,"hostname":"BarrosQuarto","msg":"Changed active context: context=a6887c45-69f0-4a29-9f34-be123cfa4e7d"}
+{"level":30,"time":"2025-09-06T17:01:34.220Z","pid":10668,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-06T17:01:34.221Z","pid":10668,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-09-06T17:01:35.279Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-06T17:01:35.291Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-09-06T17:01:39.798Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method goTo"}
+{"level":30,"time":"2025-09-06T17:01:39.882Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-09-06T17:01:39.883Z","pid":10668,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\results\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-09-06T17:01:40.057Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-09-06T17:01:40.067Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-06T17:01:40.094Z","pid":10668,"hostname":"BarrosQuarto","msg":"Removed page=264d7f40-7df9-4066-9654-19a4e52ec456 from context=a6887c45-69f0-4a29-9f34-be123cfa4e7d page stack"}
+{"level":30,"time":"2025-09-06T17:01:41.076Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-06T17:01:41.957Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-06T17:01:41.958Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-09-06T17:01:41.980Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-06T17:01:41.980Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-06T17:01:42.436Z","pid":10668,"hostname":"BarrosQuarto","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-06T17:01:42.437Z","pid":10668,"hostname":"BarrosQuarto","msg":"End of node method closeAllBrowsers"}

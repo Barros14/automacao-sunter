@@ -1,44 +1,152 @@
-{"level":30,"time":"2025-08-31T10:46:19.334Z","pid":16504,"hostname":"BarrosQuarto","msg":"Listening on 127.0.0.1:51810"}
-(node:16504) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-09-17T00:01:41.846Z","pid":23352,"hostname":"BarrosQuarto","msg":"Listening on 127.0.0.1:53114"}
+(node:23352) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2025-08-31T10:46:19.801Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-08-31T10:46:21.737Z","pid":16504,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
-{"level":30,"time":"2025-08-31T10:46:21.740Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-08-31T10:46:21.739Z","pid":16504,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-08-31T10:46:21.758Z","pid":16504,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4ef7c825ad7c871e1680f8f1ce7cb02a\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=a59b2049-782c-4d87-bf96-24b63b36690c\"}"}
-{"level":30,"time":"2025-08-31T10:46:21.756Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-08-31T10:46:21.848Z","pid":16504,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=21937dd3-d112-4cf7-8363-92ed0a1fcd3c to 10000"}
-{"level":30,"time":"2025-08-31T10:46:21.848Z","pid":16504,"hostname":"BarrosQuarto","msg":"Changed active context: context=21937dd3-d112-4cf7-8363-92ed0a1fcd3c"}
-{"level":30,"time":"2025-08-31T10:46:22.575Z","pid":16504,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
-{"level":30,"time":"2025-08-31T10:46:22.576Z","pid":16504,"hostname":"BarrosQuarto","msg":"Changed active page"}
-{"level":30,"time":"2025-08-31T10:46:23.623Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
-{"level":30,"time":"2025-08-31T10:46:23.632Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method goTo"}
-{"level":30,"time":"2025-08-31T10:46:28.785Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method goTo"}
-{"level":30,"time":"2025-08-31T10:46:28.802Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-08-31T10:46:29.653Z","pid":16504,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
-{"level":30,"time":"2025-08-31T10:46:29.653Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-08-31T10:46:29.653Z","pid":16504,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-08-31T10:46:29.666Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-08-31T10:46:29.666Z","pid":16504,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@f8f3e9467182ebaf8622a472ff7e0853\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=00b44409-ff40-4fdf-88b5-52706e4932ea\"}"}
-{"level":30,"time":"2025-08-31T10:46:29.823Z","pid":16504,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=86624846-55ba-4932-983b-6aac0b9e5a4e to 10000"}
-{"level":30,"time":"2025-08-31T10:46:29.824Z","pid":16504,"hostname":"BarrosQuarto","msg":"Changed active context: context=86624846-55ba-4932-983b-6aac0b9e5a4e"}
-{"level":30,"time":"2025-08-31T10:46:31.200Z","pid":16504,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
-{"level":30,"time":"2025-08-31T10:46:31.200Z","pid":16504,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T00:01:42.063Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-09-17T00:01:45.297Z","pid":23352,"hostname":"BarrosQuarto","msg":"Adding browser to stack: chromium, version: 140.0.7339.16"}
+{"level":30,"time":"2025-09-17T00:01:45.298Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-09-17T00:01:45.298Z","pid":23352,"hostname":"BarrosQuarto","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-09-17T00:01:45.311Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-17T00:01:45.311Z","pid":23352,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@060eaa48693e59e06ec6582bf0b1caf2\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=49f591d2-ce6d-438b-9db3-0f6bcbb1974e\"}"}
+{"level":30,"time":"2025-09-17T00:01:45.418Z","pid":23352,"hostname":"BarrosQuarto","msg":"Setting default timeout for context context=4ce65ec4-6b0c-4afd-8d96-594fe8af3487 to 10000"}
+{"level":30,"time":"2025-09-17T00:01:45.418Z","pid":23352,"hostname":"BarrosQuarto","msg":"Changed active context: context=4ce65ec4-6b0c-4afd-8d96-594fe8af3487"}
+{"level":30,"time":"2025-09-17T00:01:47.164Z","pid":23352,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-17T00:01:47.165Z","pid":23352,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T00:01:48.310Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-17T00:01:48.320Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method goTo"}
+{"level":30,"time":"2025-09-17T00:01:54.337Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method goTo"}
+{"level":30,"time":"2025-09-17T00:01:54.803Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-09-17T00:01:54.804Z","pid":23352,"hostname":"BarrosQuarto","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@060eaa48693e59e06ec6582bf0b1caf2\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=4ce65ec4-6b0c-4afd-8d96-594fe8af3487\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@e61acefe4b3ad9c30333fdb6b0f02e63\"},\"pageStack\":[{\"id\":\"page=9fa23a15-6b83-4572-b7a9-f17604dfd5aa\",\"p\":{\"_type\":\"Page\",\"_guid\":\"page@08e568d8f61ab064b81ce3c93fce085c\"},\"timestamp\":1758067307.164,\"pageErrors\":[],\"errorIndex\":0,\"consoleMessages\":[{\"type\":\"log\",\"text\":\"Angular is running in development mode.\",\"location\":{\"url\":\"https://dev.cotareconstruir.app/chunk-GHWWD5DT.js\",\"lineNumber\":19314,\"columnNumber\":12},\"time\":\"2025-09-17T00:01:52.688Z\"},{\"type\":\"verbose\",\"text\":\"[DOM] Input elements should have autocomplete attributes (suggested: \\\"current-password\\\"): (More info: https://goo.gl/9p2vKq) %o\",\"location\":{\"url\":\"https://dev.cotareconstruir.app/auth/login\",\"lineNumber\":0,\"columnNumber\":0},\"time\":\"2025-09-17T00:01:53.172Z\"}],\"consoleIndex\":0,\"activeDownloads\":{}}],\"traceFile\":\"\"}],\"id\":\"browser=49f591d2-ce6d-438b-9db3-0f6bcbb1974e\"}"}
+{"level":30,"time":"2025-09-17T00:01:55.034Z","pid":23352,"hostname":"BarrosQuarto","msg":"Video path: undefined"}
+{"level":30,"time":"2025-09-17T00:01:55.035Z","pid":23352,"hostname":"BarrosQuarto","msg":"Changed active page"}
+{"level":30,"time":"2025-09-17T00:01:57.714Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method newPage"}
+{"level":30,"time":"2025-09-17T00:01:57.777Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:01:57.778Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Ainda não tem uma conta? Cadastre agora mesmo. in page."}
+{"level":30,"time":"2025-09-17T00:01:57.861Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:01:57.872Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:01:57.873Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is disabled, return Locator: text=Ainda não tem uma conta? Cadastre agora mesmo. in page."}
+{"level":30,"time":"2025-09-17T00:01:57.880Z","pid":23352,"hostname":"BarrosQuarto","msg":"Locator count is 1"}
+{"level":30,"time":"2025-09-17T00:01:57.919Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:01:57.929Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:01:57.929Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Ainda não tem uma conta? Cadastre agora mesmo. in page."}
+{"level":30,"time":"2025-09-17T00:02:04.249Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:06.270Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:06.270Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Qual perfil de conta você gostaria de criar? in page."}
+{"level":30,"time":"2025-09-17T00:02:06.280Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:06.288Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:06.288Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is disabled, return Locator: text=Qual perfil de conta você gostaria de criar? in page."}
+{"level":30,"time":"2025-09-17T00:02:06.292Z","pid":23352,"hostname":"BarrosQuarto","msg":"Locator count is 1"}
+{"level":30,"time":"2025-09-17T00:02:07.201Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:07.210Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:07.210Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Construtor in page."}
+{"level":30,"time":"2025-09-17T00:02:10.386Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:12.430Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:12.431Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"cpfOrCnpj\"] in page."}
+{"level":30,"time":"2025-09-17T00:02:13.658Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:13.699Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:13.699Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text= Avançar in page."}
+{"level":30,"time":"2025-09-17T00:02:15.627Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:15.635Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:15.635Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"fullName\"] in page."}
+{"level":30,"time":"2025-09-17T00:02:16.785Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:16.801Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:16.801Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id='birthDate'])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:18.214Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:18.223Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:18.223Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id='birthDate'])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:19.266Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:19.274Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:19.274Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with input#gender in page."}
+{"level":30,"time":"2025-09-17T00:02:20.467Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:20.477Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:20.477Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Masculino in page."}
+{"level":30,"time":"2025-09-17T00:02:20.493Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:20.503Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:20.503Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text= Masculino in page."}
+{"level":30,"time":"2025-09-17T00:02:21.626Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:21.635Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:21.635Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"cellphone\"] in page."}
+{"level":30,"time":"2025-09-17T00:02:22.700Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:22.706Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:22.706Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"telephone\"] in page."}
+{"level":30,"time":"2025-09-17T00:02:23.739Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:23.749Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:23.749Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text= Avançar in page."}
+{"level":30,"time":"2025-09-17T00:02:27.898Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:33.109Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:33.109Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//h5[text()='Endereço'] in page."}
+{"level":30,"time":"2025-09-17T00:02:33.120Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:33.128Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:33.128Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is disabled, return Locator: xpath=//h5[text()='Endereço'] in page."}
+{"level":30,"time":"2025-09-17T00:02:33.132Z","pid":23352,"hostname":"BarrosQuarto","msg":"Locator count is 1"}
+{"level":30,"time":"2025-09-17T00:02:33.138Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:33.146Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:33.146Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"zipcode\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:34.208Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:34.218Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:34.218Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"zipcode\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:35.234Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:35.247Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:35.247Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"number\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:36.493Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:36.502Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:36.502Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"number\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:37.537Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:37.554Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:37.554Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text= Avançar in page."}
+{"level":30,"time":"2025-09-17T00:02:38.775Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:41.790Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:41.790Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Seu melhor e-mail in page."}
+{"level":30,"time":"2025-09-17T00:02:41.808Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:41.817Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:41.817Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is disabled, return Locator: text=Seu melhor e-mail in page."}
+{"level":30,"time":"2025-09-17T00:02:41.824Z","pid":23352,"hostname":"BarrosQuarto","msg":"Locator count is 1"}
+{"level":30,"time":"2025-09-17T00:02:41.832Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:41.843Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:41.843Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"email\"] in page."}
+{"level":30,"time":"2025-09-17T00:02:42.926Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:42.937Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:42.937Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=//input[@formcontrolname=\"email\"] in page."}
+{"level":30,"time":"2025-09-17T00:02:43.996Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:44.011Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:44.011Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"password\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:45.192Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:45.199Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:45.199Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"password\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:46.252Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:46.261Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:46.261Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"confirmPassword\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:47.322Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:47.379Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:47.379Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with xpath=(//input[@id=\"confirmPassword\"])[1] in page."}
+{"level":30,"time":"2025-09-17T00:02:48.406Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method fillText"}
+{"level":30,"time":"2025-09-17T00:02:48.415Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:48.415Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Avançar in page."}
+{"level":30,"time":"2025-09-17T00:02:49.481Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:52.492Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method click"}
+{"level":30,"time":"2025-09-17T00:02:52.492Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Avançar in page."}
+{"level":30,"time":"2025-09-17T00:02:53.553Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method click"}
+{"level":30,"time":"2025-09-17T00:02:53.565Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:53.566Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is enabled, find Locator with text=Senhas não conferem in page."}
+{"level":30,"time":"2025-09-17T00:02:53.575Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-09-17T00:02:53.583Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:53.584Z","pid":23352,"hostname":"BarrosQuarto","msg":"Strict mode is disabled, return Locator: text=Senhas não conferem in page."}
+{"level":30,"time":"2025-09-17T00:02:53.588Z","pid":23352,"hostname":"BarrosQuarto","msg":"Locator count is 1"}
+{"level":30,"time":"2025-09-17T00:02:53.596Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method highlightElements"}
+{"level":30,"time":"2025-09-17T00:02:53.608Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-09-17T00:02:53.608Z","pid":23352,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-09-17T00:02:53.764Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-09-17T00:02:53.789Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-09-17T00:02:53.789Z","pid":23352,"hostname":"BarrosQuarto","Take screenshot with options: ":{"path":"C:\\Projeto Sunter\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-09-17T00:02:53.923Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-09-17T00:02:53.932Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-09-17T00:02:53.958Z","pid":23352,"hostname":"BarrosQuarto","msg":"Removed page=d6d48141-9d3e-43e6-8ebd-e9beb3623878 from context=4ce65ec4-6b0c-4afd-8d96-594fe8af3487 page stack"}
+{"level":30,"time":"2025-09-17T00:02:53.964Z","pid":23352,"hostname":"BarrosQuarto","msg":"Removed page=0af5aaa4-01f6-4ca5-ac7a-f88277bf2394 from context=4ce65ec4-6b0c-4afd-8d96-594fe8af3487 page stack"}
+{"level":30,"time":"2025-09-17T00:02:54.810Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method closeBrowser"}
 ================= Original suppressed error =================
-page.goto: Target page, context or browser has been closed
-Call log:
-[2m  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"[22m
-
-    at newPage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12572:18)
-    at async PlaywrightServer.newPage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13137:28)
-=============================================================
-{"level":30,"time":"2025-08-31T10:46:33.955Z","pid":16504,"hostname":"BarrosQuarto","msg":"Removed page=946b2f10-6d21-44bd-a294-8550159ee6d5 from context=86624846-55ba-4932-983b-6aac0b9e5a4e page stack"}
-{"level":30,"time":"2025-08-31T10:46:33.957Z","pid":16504,"hostname":"BarrosQuarto","msg":"Error of node method  newPage"}
-================= Original suppressed error =================
-Error: Tried to take screenshot, but no page was open.
-    at exists (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:10725:11)
-    at takeScreenshot (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:10769:3)
-    at PlaywrightServer.takeScreenshot (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13137:34)
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13372:57)
     at Object.onReceiveHalfClose (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
     at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
     at BaseServerInterceptingCall.handleEndEvent (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
@@ -47,14 +155,13 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2025-08-31T10:46:33.974Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2025-08-31T10:46:33.975Z","pid":16504,"hostname":"BarrosQuarto","msg":"Error of node method  takeScreenshot"}
-{"level":30,"time":"2025-08-31T10:46:35.706Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-09-17T00:02:54.826Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T00:02:54.827Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
-Error: Tried to take screenshot, but no page was open.
-    at exists (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:10725:11)
-    at takeScreenshot (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:10769:3)
-    at PlaywrightServer.takeScreenshot (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13137:34)
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13372:57)
     at Object.onReceiveHalfClose (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
     at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
     at BaseServerInterceptingCall.handleEndEvent (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
@@ -63,37 +170,7 @@ Error: Tried to take screenshot, but no page was open.
     at endReadableNT (node:internal/streams/readable:1698:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2025-08-31T10:46:35.706Z","pid":16504,"hostname":"BarrosQuarto","msg":"Error of node method  takeScreenshot"}
-================= Original suppressed error =================
-Error: Tried to take screenshot, but no page was open.
-    at exists (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:10725:11)
-    at takeScreenshot (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:10769:3)
-    at PlaywrightServer.takeScreenshot (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13137:34)
-    at Object.onReceiveHalfClose (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
-    at BaseServerInterceptingCall.handleEndEvent (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
-    at ServerHttp2Stream.<anonymous> (C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
-    at ServerHttp2Stream.emit (node:events:530:35)
-    at endReadableNT (node:internal/streams/readable:1698:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
-=============================================================
-{"level":30,"time":"2025-08-31T10:46:35.717Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2025-08-31T10:46:35.717Z","pid":16504,"hostname":"BarrosQuarto","msg":"Error of node method  takeScreenshot"}
-{"level":30,"time":"2025-08-31T10:46:35.742Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2025-08-31T10:46:37.097Z","pid":16504,"hostname":"BarrosQuarto","msg":"Removed page=ff40f0bb-e36b-4dec-a3ff-c1168cdc76f7 from context=21937dd3-d112-4cf7-8363-92ed0a1fcd3c page stack"}
-{"level":30,"time":"2025-08-31T10:46:41.270Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method closeBrowser"}
-{"level":30,"time":"2025-08-31T10:46:41.292Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.294Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.298Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.299Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.303Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.304Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.313Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.313Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.319Z","pid":16504,"hostname":"BarrosQuarto","msg":"Changed active context: context=21937dd3-d112-4cf7-8363-92ed0a1fcd3c"}
-{"level":30,"time":"2025-08-31T10:46:41.325Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method closeContext"}
-{"level":30,"time":"2025-08-31T10:46:41.337Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method closeContext"}
-{"level":30,"time":"2025-08-31T10:46:41.359Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:41.359Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-08-31T10:46:43.772Z","pid":16504,"hostname":"BarrosQuarto","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-08-31T10:46:43.979Z","pid":16504,"hostname":"BarrosQuarto","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-17T00:02:54.842Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T00:02:54.842Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-09-17T00:02:56.979Z","pid":23352,"hostname":"BarrosQuarto","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-09-17T00:02:56.979Z","pid":23352,"hostname":"BarrosQuarto","msg":"End of node method closeAllBrowsers"}

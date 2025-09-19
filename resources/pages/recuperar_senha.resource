@@ -28,7 +28,7 @@ E clico em Recuperar senha
     Sleep    3s   
     Click    text=Recuperar senha
 
-Então aparece o toster de Recuperação de Senha
+Então aparece a mensagem de Recuperação de Senha
     Wait For Elements State        text=Solicitacao de recuperação gerada com sucesso    Visible
     Highlight Elements             text=Solicitacao de recuperação gerada com sucesso
     Take Screenshot

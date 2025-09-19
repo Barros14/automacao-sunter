@@ -13,8 +13,10 @@ ${ENV}                   https://dev.cotareconstruir.app/auth
 
 *** Test Cases ***
 Recuperação de senha
+    [Tags]    REC04
+    
     Dado que estou na home do Cotar & Contruir
     Quando clico em Esqueceu a senha
     E preencho o campo com email cadastrado
     E clico em Recuperar senha
-    Então aparece o toster de Recuperação de Senha
+    Então aparece a mensagem de Recuperação de Senha

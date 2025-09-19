@@ -1,18 +1,19 @@
 *** Settings ***
 Documentation     Teste de login do lojista no Cotar & Construir
-Library           Browser
 
-Resource          ../../resources/pages/login_lojista.resource
+Resource          ../../resources/pages/login.resource
 Resource          ../../resources/base/base.resource
 
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 
 *** Variables ***
-
-${USUARIO_LOJISTA}    lojista.lauro@yopmail.com
-${SENHA_PADRAO}       P@ssw0rd
-${ENV}                https://dev.cotareconstruir.app/auth
+${USUARIO_CONSTRUTOR}    construtor.lauro@yopmail.com
+${USUARIO_LOJISTA}       lojista.lauro@yopmail.com
+${SENHA_PADRAO}          P@ssw0rd
+${SENHA_INCORRETA}       SenhaIncorreta12
+${USUARIO_INCORRETO}     usuario_incorreto@yopmail.com
+${ENV}                   https://dev.cotareconstruir.app/auth
 
 *** Test Cases ***
 Login de Lojista com Dados Validos
@@ -21,34 +22,40 @@ Login de Lojista com Dados Validos
     Realizar Login de Lojista         ${USUARIO_LOJISTA}    ${SENHA_PADRAO} 
     E clico em entrar
     Então aparece o painel da Cotar & Construir
-    
-Login com Senha em Branco
+
+Login de Construtor com Dados Validos
     [Tags]    LGN02
 
+    Realizar Login de Construtor         ${USUARIO_CONSTRUTOR}    ${SENHA_PADRAO} 
+    E clico em entrar
+    Então aparece o painel de Ofertas Cotar & Construir    
+Login com Senha em Branco
+    [Tags]    LGN03
+
     Dado que estou na home page do site Cotar & Contruir
-    Quando preencho as informações para login de lojista         ${USUARIO_LOJISTA}    ${EMPTY}
+    Quando preencho as informações para login de lojista e deixo a senha em branco     ${USUARIO_LOJISTA}    ${EMPTY}
     E clico em entrar
     Então aparece a mensagem de erro para senha em branco
 
 Login com Senha Incorreta
-    [Tags]    LGN03
+    [Tags]    LGN04
     Dado que estou na home page do site Cotar & Contruir
-    Quando preencho as informações para login de lojista       ${USUARIO_LOJISTA}    SenhaIncorreta12
+    Quando preencho as informações para login com a senha incorreta       ${USUARIO_LOJISTA}    ${SENHA_INCORRETA}
     E clico em entrar
     Então aparece a mensagem de erro para senha incorreta
 
 Login com Usuário Incorreto
-    [Tags]    LGN04
+    [Tags]    LGN05
     Dado que estou na home page do site Cotar & Contruir
-    Quando preencho as informações para login de lojista       usuario_incorreto@ yopmail.com     ${SENHA_PADRAO}
+    Quando preencho as informações para login com o usuário incorreto       ${USUARIO_INCORRETO}    ${SENHA_PADRAO}
     E clico em entrar
     Então aparece a mensagem de erro para usuário incorreto
 
 
 Login com Usuário em Branco
-    [Tags]    LGN05
+    [Tags]    LGN06
     Dado que estou na home page do site Cotar & Contruir
-    Quando preencho as informações para login de lojista       ${EMPTY}    ${SENHA_PADRAO}
+    Quando preencho as informações para login e deixo o usuário em branco       ${EMPTY}    ${SENHA_PADRAO}
     E clico em entrar
     Então aparece a mensagem de erro para usuário em branco
 

@@ -1,0 +1,2701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-18T09:12:00.556314" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Projeto Sunter\tests">
+<suite id="s1-s1" name="Cadastro" source="C:\Projeto Sunter\tests\cadastro">
+<suite id="s1-s1-s1" name="TC03-cadastro contrutor" source="C:\Projeto Sunter\tests\cadastro\TC03-cadastro_contrutor.robot">
+<test id="s1-s1-s1-t1" name="Cadastro de Construtor com dados válidos" line="13">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:12:03.841660" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\c66b44e8-1c1d-4275-879b-6be300915f57"}</msg>
+<msg time="2025-09-18T09:12:04.160226" level="INFO">Starting Browser process C:\Users\User\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60779</msg>
+<msg time="2025-09-18T09:12:09.761322" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\c66b44e8-1c1d-4275-879b-6be300915f57"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:12:03.838698" elapsed="5.923132"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:12:12.485706" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:12:12.485913" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:12:09.762373" elapsed="2.723933"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:12:23.024537" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-09-18T09:12:12.486721" elapsed="10.538226"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:12:03.832212" elapsed="19.192999"/>
+</kw>
+<kw name="Gerar Dados Dinâmicos" owner="cadastro_construtor">
+<kw name="Gerar CPF Unico" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:12:23.032600" level="INFO">${RANDOM_STRING} = mtptkuqj</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.031908" elapsed="0.000754"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:12:23.032846" elapsed="0.000360"/>
+</return>
+<msg time="2025-09-18T09:12:23.033540" level="INFO">${unique_part} = mtptkuqj</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:12:23.031210" elapsed="0.002386"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:12:23.034403" level="INFO">${CPF_FAKE} = mtptkuqj-45</msg>
+<var>${CPF_FAKE}</var>
+<arg>${unique_part}-45</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.033863" elapsed="0.000598"/>
+</kw>
+<return>
+<value>${CPF_FAKE}</value>
+<status status="PASS" start="2025-09-18T09:12:23.034577" elapsed="0.000866"/>
+</return>
+<msg time="2025-09-18T09:12:23.035901" level="INFO">${CPF_FAKE} = mtptkuqj-45</msg>
+<var>${CPF_FAKE}</var>
+<status status="PASS" start="2025-09-18T09:12:23.030600" elapsed="0.005508"/>
+</kw>
+<kw name="Gerar Nome Unico" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:12:23.041489" level="INFO">${RANDOM_STRING} = ioxuhbwt</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.040451" elapsed="0.001108"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:12:23.041740" elapsed="0.000323"/>
+</return>
+<msg time="2025-09-18T09:12:23.042347" level="INFO">${unique_part} = ioxuhbwt</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:12:23.038888" elapsed="0.003511"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:12:23.043238" level="INFO">${NOME} = Cadastro Contrutorioxuhbwt</msg>
+<var>${NOME}</var>
+<arg>${PREFIX}${unique_part}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.042702" elapsed="0.000601"/>
+</kw>
+<return>
+<value>${NOME}</value>
+<status status="PASS" start="2025-09-18T09:12:23.043461" elapsed="0.000389"/>
+</return>
+<msg time="2025-09-18T09:12:23.044103" level="INFO">${NOME_FAKE} = Cadastro Contrutorioxuhbwt</msg>
+<var>${NOME_FAKE}</var>
+<status status="PASS" start="2025-09-18T09:12:23.036904" elapsed="0.007248"/>
+</kw>
+<kw name="Gerar Data De Nascimento Aleatória" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:12:23.046905" level="INFO">${RANDOM_STRING} = stanxlsk</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.045863" elapsed="0.001130"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:12:23.047229" elapsed="0.000496"/>
+</return>
+<msg time="2025-09-18T09:12:23.048485" level="INFO">${unique_part} = stanxlsk</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:12:23.045168" elapsed="0.003381"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:12:23.049655" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<var>${DATA_NASC}</var>
+<arg>01/01/1950</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.048933" elapsed="0.000790"/>
+</kw>
+<return>
+<value>${DATA_NASC}</value>
+<status status="PASS" start="2025-09-18T09:12:23.049965" elapsed="0.000383"/>
+</return>
+<msg time="2025-09-18T09:12:23.050707" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<var>${DATA_NASC}</var>
+<status status="PASS" start="2025-09-18T09:12:23.044480" elapsed="0.006290"/>
+</kw>
+<kw name="Gerar Telefone Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:12:23.057111" level="INFO">${timestamp} = 091223</msg>
+<var>${timestamp}</var>
+<arg>result_format=%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.052019" elapsed="0.005201"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:12:23.058940" level="INFO">${TELEFONE} = qa_091223@yopmail.com</msg>
+<var>${TELEFONE}</var>
+<arg>qa_${timestamp}@yopmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.057848" elapsed="0.001162"/>
+</kw>
+<return>
+<value>${TELEFONE}</value>
+<status status="PASS" start="2025-09-18T09:12:23.059708" elapsed="0.000557"/>
+</return>
+<msg time="2025-09-18T09:12:23.060692" level="INFO">${TELEFONE} = qa_091223@yopmail.com</msg>
+<var>${TELEFONE}</var>
+<status status="PASS" start="2025-09-18T09:12:23.051167" elapsed="0.009585"/>
+</kw>
+<kw name="Gerar Celular Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:12:23.065573" level="INFO">${timestamp} = 091223</msg>
+<var>${timestamp}</var>
+<arg>result_format=%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.062482" elapsed="0.003219"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:12:23.072856" level="INFO">${CELULAR} = 71992091223</msg>
+<var>${CELULAR}</var>
+<arg>71992${timestamp}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.071326" elapsed="0.002100"/>
+</kw>
+<return>
+<value>${CELULAR}</value>
+<status status="PASS" start="2025-09-18T09:12:23.073771" elapsed="0.000826"/>
+</return>
+<msg time="2025-09-18T09:12:23.075091" level="INFO">${CELULAR} = 71992091223</msg>
+<var>${CELULAR}</var>
+<status status="PASS" start="2025-09-18T09:12:23.061142" elapsed="0.014010"/>
+</kw>
+<kw name="Gerar Email Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:12:23.077822" level="INFO">${timestamp} = 20250918091223</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.076686" elapsed="0.001299"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:12:23.081163" level="INFO">${EMAIL} = qa_20250918091223@yopmail.com</msg>
+<var>${EMAIL}</var>
+<arg>qa_${timestamp}@yopmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.078733" elapsed="0.002618"/>
+</kw>
+<return>
+<value>${EMAIL}</value>
+<status status="PASS" start="2025-09-18T09:12:23.081779" elapsed="0.000760"/>
+</return>
+<msg time="2025-09-18T09:12:23.082950" level="INFO">${EMAIL} = qa_20250918091223@yopmail.com</msg>
+<var>${EMAIL}</var>
+<status status="PASS" start="2025-09-18T09:12:23.075577" elapsed="0.007427"/>
+</kw>
+<return>
+<value>${CPF_FAKE}</value>
+<value>${NOME_FAKE}</value>
+<value>${DATA_NASC}</value>
+<value>${TELEFONE}</value>
+<value>${CELULAR}</value>
+<value>${EMAIL}</value>
+<status status="PASS" start="2025-09-18T09:12:23.083118" elapsed="0.000299"/>
+</return>
+<msg time="2025-09-18T09:12:23.083931" level="INFO">${CPF_FAKE} = mtptkuqj-45</msg>
+<msg time="2025-09-18T09:12:23.084007" level="INFO">${NOME_FAKE} = Cadastro Contrutorioxuhbwt</msg>
+<msg time="2025-09-18T09:12:23.084076" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<msg time="2025-09-18T09:12:23.084150" level="INFO">${EMAIL} = qa_091223@yopmail.com</msg>
+<msg time="2025-09-18T09:12:23.084213" level="INFO">${CELULAR} = 71992091223</msg>
+<msg time="2025-09-18T09:12:23.084287" level="INFO">${TELEFONE} = qa_20250918091223@yopmail.com</msg>
+<var>${CPF_FAKE}</var>
+<var>${NOME_FAKE}</var>
+<var>${DATA_NASC}</var>
+<var>${EMAIL}</var>
+<var>${CELULAR}</var>
+<var>${TELEFONE}</var>
+<status status="PASS" start="2025-09-18T09:12:23.029522" elapsed="0.054811"/>
+</kw>
+<kw name="Dado que estou na home page de cadastro" owner="cadastro_construtor">
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:12:25.781135" level="INFO">Successfully initialized new page object and opened url: https://dev.cotareconstruir.app/</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:12:23.085838" elapsed="2.695659"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:12:23.084977" elapsed="2.696721"/>
+</kw>
+<kw name="Quando clico em cadastre agora" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:12:25.968487" level="INFO">Waited for Element with selector text=Ainda não tem uma conta? Cadastre agora mesmo. at state visible</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:12:25.850712" elapsed="0.118157"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:12:26.027640" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:12:25.969358" elapsed="0.059179"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:26.030274" level="INFO">Clicks the element 'text=Ainda não tem uma conta? Cadastre agora mesmo.'.</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:26.028974" elapsed="6.488086"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:12:34.519717" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:12:32.517593" elapsed="2.002384"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:12:25.849690" elapsed="8.670507"/>
+</kw>
+<kw name="E seleciono a opção de cadastro de construtor" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:12:34.540957" level="INFO">Waited for Element with selector text=Qual perfil de conta você gostaria de criar? at state visible</msg>
+<arg>text=Qual perfil de conta você gostaria de criar?</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:12:34.521813" elapsed="0.019464"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:12:34.599966" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Qual perfil de conta você gostaria de criar?</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:12:34.541708" elapsed="0.059297"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:34.605877" level="INFO">Clicks the element 'text=Construtor'.</msg>
+<arg>text=Construtor</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:34.601930" elapsed="1.275811"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:12:37.879723" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:12:35.878155" elapsed="2.001787"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:12:34.520827" elapsed="3.359304"/>
+</kw>
+<kw name="E preencho as informações para cadastro de construtor" owner="cadastro_construtor">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:12:37.882851" level="INFO">Fills the text '274.765.090-13' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="cpfOrCnpj"]</arg>
+<arg>${CPF_FAKE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:37.881927" elapsed="1.055616"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:38.940246" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:38.938462" elapsed="1.107039"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:12:40.048088" level="INFO">Fills the text 'Cadastro Contrutorioxuhbwt' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="fullName"]</arg>
+<arg>${NOME_FAKE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:40.046350" elapsed="1.091290"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:41.139085" level="INFO">Clicks the element 'xpath=(//input[@id='birthDate'])[1]'.</msg>
+<arg>xpath=(//input[@id='birthDate'])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:41.138076" elapsed="1.093578"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:12:42.233091" level="INFO">Fills the text '21/07/1980' in the given field.</msg>
+<arg>xpath=(//input[@id='birthDate'])[1]</arg>
+<arg>${DATA_NASC}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:42.232023" elapsed="1.026737"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:43.260540" level="INFO">Clicks the element 'input#gender'.</msg>
+<arg>input#gender</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:43.259168" elapsed="1.134780"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:12:44.414347" level="INFO">Waited for Element with selector text=Masculino at state visible</msg>
+<arg>text=Masculino</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:12:44.394666" elapsed="0.020198"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:44.417888" level="INFO">Clicks the element 'text= Masculino'.</msg>
+<arg>text= Masculino</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:44.415311" elapsed="1.134032"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:12:45.551026" level="INFO">Fills the text '71 99132-6395' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="cellphone"]</arg>
+<arg>${CELULAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:45.549773" elapsed="1.042829"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:12:46.594198" level="INFO">Fills the text '71 3461-1234' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="telephone"]</arg>
+<arg>${TELEFONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:46.593022" elapsed="1.051915"/>
+</kw>
+<arg>274.765.090-13</arg>
+<arg>${NOME_FAKE}</arg>
+<arg>21/07/1980</arg>
+<arg>71 99132-6395</arg>
+<arg>71 3461-1234</arg>
+<status status="PASS" start="2025-09-18T09:12:37.880806" elapsed="9.764363"/>
+</kw>
+<kw name="E clico em avançar para Dados Cadastrais" owner="cadastro_construtor">
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:47.647671" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:47.646732" elapsed="1.469082"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:12:54.118419" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:12:49.116370" elapsed="5.002266"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:12:47.645722" elapsed="6.473091"/>
+</kw>
+<kw name="E preencho o endereço para Cadastro de Construtor" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:12:54.136258" level="INFO">Waited for Element with selector xpath=//h5[text()='Endereço'] at state visible</msg>
+<arg>xpath=//h5[text()='Endereço']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:12:54.120534" elapsed="0.016131"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:12:54.161542" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>xpath=//h5[text()='Endereço']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:12:54.137161" elapsed="0.024843"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:54.163913" level="INFO">Clicks the element 'xpath=(//input[@id="zipcode"])[1]'.</msg>
+<arg>xpath=(//input[@id="zipcode"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:54.162471" elapsed="1.103643"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:12:55.268010" level="INFO">Fills the text '41350-300' in the given field.</msg>
+<arg>xpath=(//input[@id="zipcode"])[1]</arg>
+<arg>${CEP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:55.266531" elapsed="1.034853"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:56.302746" level="INFO">Clicks the element 'xpath=(//input[@id="number"])[1]'.</msg>
+<arg>xpath=(//input[@id="number"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:56.301772" elapsed="1.124855"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:12:57.429329" level="INFO">Fills the text '10' in the given field.</msg>
+<arg>xpath=(//input[@id="number"])[1]</arg>
+<arg>${NUMERO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:57.427541" elapsed="1.025333"/>
+</kw>
+<arg>41350-300</arg>
+<arg>10</arg>
+<status status="PASS" start="2025-09-18T09:12:54.119420" elapsed="4.333741"/>
+</kw>
+<kw name="E clico em avançar para Endereço" owner="cadastro_construtor">
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:12:58.455524" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:12:58.454662" elapsed="1.269238"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:13:02.725115" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:12:59.724271" elapsed="3.001048"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:12:58.453811" elapsed="4.271689"/>
+</kw>
+<kw name="E defino a conta para cadastro de construtor" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:13:02.744437" level="INFO">Waited for Element with selector text=Seu melhor e-mail at state visible</msg>
+<arg>text=Seu melhor e-mail</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:13:02.728065" elapsed="0.016721"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:13:02.779803" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Seu melhor e-mail</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:13:02.745176" elapsed="0.035227"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:02.783998" level="INFO">Clicks the element 'xpath=//input[@formcontrolname="email"]'.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:02.781394" elapsed="1.100334"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:03.883284" level="INFO">Fills the text 'qa_091223@yopmail.com' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:03.882103" elapsed="1.038947"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:04.922527" level="INFO">Clicks the element 'xpath=(//input[@id="password"])[1]'.</msg>
+<arg>xpath=(//input[@id="password"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:04.921507" elapsed="1.176869"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:06.100014" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=(//input[@id="password"])[1]</arg>
+<arg>${SENHA_PADRAO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:06.098821" elapsed="1.054097"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:07.154692" level="INFO">Clicks the element 'xpath=(//input[@id="confirmPassword"])[1]'.</msg>
+<arg>xpath=(//input[@id="confirmPassword"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:07.153306" elapsed="1.074057"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:08.229275" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=(//input[@id="confirmPassword"])[1]</arg>
+<arg>${CONFIRMAR_SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:08.227831" elapsed="1.037192"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:09.266710" level="INFO">Clicks the element 'text=Avançar'.</msg>
+<arg>text=Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:09.265474" elapsed="1.123695"/>
+</kw>
+<arg>${EMAIL}</arg>
+<arg>${SENHA_PADRAO}</arg>
+<arg>${CONFIRMAR_SENHA}</arg>
+<status status="PASS" start="2025-09-18T09:13:02.726757" elapsed="7.662645"/>
+</kw>
+<kw name="E clico em avançar para definição de conta" owner="cadastro_construtor">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:13:13.392665" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:13:10.390949" elapsed="3.001951"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:13.394270" level="INFO">Clicks the element 'text=Avançar'.</msg>
+<arg>text=Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:13.393251" elapsed="1.093063"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:10.389988" elapsed="4.096637"/>
+</kw>
+<kw name="Então aparece a mensagem de cadastro feito" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:13:14.600797" level="INFO">Waited for Element with selector text=CADASTRO FEITO! at state visible</msg>
+<arg>text=CADASTRO FEITO!</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:13:14.495515" elapsed="0.105796"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:13:14.648012" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=CADASTRO FEITO!</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:13:14.602129" elapsed="0.046442"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:13:14.879515" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:13:14.649071" elapsed="0.232045"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:14.492387" elapsed="0.389236"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:13:15.084737" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:13:14.909955" elapsed="0.175677"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:13:16.988620" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:13:15.086161" elapsed="1.902905"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:14.908973" elapsed="2.080377"/>
+</kw>
+<doc>Testa o cadastro de um novo construtor</doc>
+<tag>CD01</tag>
+<status status="PASS" start="2025-09-18T09:12:03.829670" elapsed="73.164175"/>
+</test>
+<test id="s1-s1-s1-t2" name="Cadastro de Construtor com senhas diferentes" line="34">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:13:17.061189" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\3bae9d0e-4d04-401f-9394-5e40fe04504d"}</msg>
+<msg time="2025-09-18T09:13:18.532900" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\3bae9d0e-4d04-401f-9394-5e40fe04504d"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:13:17.058433" elapsed="1.475049"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:13:20.766718" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:13:20.766877" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:13:18.533877" elapsed="2.233289"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:13:28.254155" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-09-18T09:13:20.767906" elapsed="7.486658"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:17.056405" elapsed="11.198373"/>
+</kw>
+<kw name="Gerar Dados Dinâmicos" owner="cadastro_construtor">
+<kw name="Gerar CPF Unico" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:13:28.259016" level="INFO">${RANDOM_STRING} = wruaiwky</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.258091" elapsed="0.001081"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:13:28.259502" elapsed="0.000717"/>
+</return>
+<msg time="2025-09-18T09:13:28.260787" level="INFO">${unique_part} = wruaiwky</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:13:28.257398" elapsed="0.003449"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:13:28.262152" level="INFO">${CPF_FAKE} = wruaiwky-45</msg>
+<var>${CPF_FAKE}</var>
+<arg>${unique_part}-45</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.261194" elapsed="0.001040"/>
+</kw>
+<return>
+<value>${CPF_FAKE}</value>
+<status status="PASS" start="2025-09-18T09:13:28.262415" elapsed="0.000686"/>
+</return>
+<msg time="2025-09-18T09:13:28.263690" level="INFO">${CPF_FAKE} = wruaiwky-45</msg>
+<var>${CPF_FAKE}</var>
+<status status="PASS" start="2025-09-18T09:13:28.256741" elapsed="0.007012"/>
+</kw>
+<kw name="Gerar Nome Unico" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:13:28.269306" level="INFO">${RANDOM_STRING} = rkvhveml</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.267822" elapsed="0.001583"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:13:28.269583" elapsed="0.000377"/>
+</return>
+<msg time="2025-09-18T09:13:28.270257" level="INFO">${unique_part} = rkvhveml</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:13:28.265184" elapsed="0.005128"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:13:28.271309" level="INFO">${NOME} = Cadastro Contrutorrkvhveml</msg>
+<var>${NOME}</var>
+<arg>${PREFIX}${unique_part}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.270639" elapsed="0.000730"/>
+</kw>
+<return>
+<value>${NOME}</value>
+<status status="PASS" start="2025-09-18T09:13:28.271485" elapsed="0.000284"/>
+</return>
+<msg time="2025-09-18T09:13:28.272021" level="INFO">${NOME_FAKE} = Cadastro Contrutorrkvhveml</msg>
+<var>${NOME_FAKE}</var>
+<status status="PASS" start="2025-09-18T09:13:28.264153" elapsed="0.007916"/>
+</kw>
+<kw name="Gerar Data De Nascimento Aleatória" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:13:28.274249" level="INFO">${RANDOM_STRING} = cycnwswc</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.273680" elapsed="0.000627"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:13:28.274440" elapsed="0.000260"/>
+</return>
+<msg time="2025-09-18T09:13:28.274946" level="INFO">${unique_part} = cycnwswc</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:13:28.273054" elapsed="0.001945"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:13:28.275747" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<var>${DATA_NASC}</var>
+<arg>01/01/1950</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.275265" elapsed="0.000544"/>
+</kw>
+<return>
+<value>${DATA_NASC}</value>
+<status status="PASS" start="2025-09-18T09:13:28.275938" elapsed="0.000313"/>
+</return>
+<msg time="2025-09-18T09:13:28.277124" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<var>${DATA_NASC}</var>
+<status status="PASS" start="2025-09-18T09:13:28.272390" elapsed="0.004852"/>
+</kw>
+<kw name="Gerar Telefone Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:13:28.283319" level="INFO">${timestamp} = 091328</msg>
+<var>${timestamp}</var>
+<arg>result_format=%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.281794" elapsed="0.001622"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:13:28.284735" level="INFO">${TELEFONE} = qa_091328@yopmail.com</msg>
+<var>${TELEFONE}</var>
+<arg>qa_${timestamp}@yopmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.283817" elapsed="0.000993"/>
+</kw>
+<return>
+<value>${TELEFONE}</value>
+<status status="PASS" start="2025-09-18T09:13:28.284981" elapsed="0.001312"/>
+</return>
+<msg time="2025-09-18T09:13:28.287163" level="INFO">${TELEFONE} = qa_091328@yopmail.com</msg>
+<var>${TELEFONE}</var>
+<status status="PASS" start="2025-09-18T09:13:28.277683" elapsed="0.009575"/>
+</kw>
+<kw name="Gerar Celular Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:13:28.290960" level="INFO">${timestamp} = 091328</msg>
+<var>${timestamp}</var>
+<arg>result_format=%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.288847" elapsed="0.004634"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:13:28.300859" level="INFO">${CELULAR} = 71992091328</msg>
+<var>${CELULAR}</var>
+<arg>71992${timestamp}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.299583" elapsed="0.001362"/>
+</kw>
+<return>
+<value>${CELULAR}</value>
+<status status="PASS" start="2025-09-18T09:13:28.301135" elapsed="0.000451"/>
+</return>
+<msg time="2025-09-18T09:13:28.301905" level="INFO">${CELULAR} = 71992091328</msg>
+<var>${CELULAR}</var>
+<status status="PASS" start="2025-09-18T09:13:28.287734" elapsed="0.014223"/>
+</kw>
+<kw name="Gerar Email Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:13:28.305577" level="INFO">${timestamp} = 20250918091328</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.303343" elapsed="0.002504"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:13:28.309395" level="INFO">${EMAIL} = qa_20250918091328@yopmail.com</msg>
+<var>${EMAIL}</var>
+<arg>qa_${timestamp}@yopmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.307523" elapsed="0.001967"/>
+</kw>
+<return>
+<value>${EMAIL}</value>
+<status status="PASS" start="2025-09-18T09:13:28.309702" elapsed="0.000500"/>
+</return>
+<msg time="2025-09-18T09:13:28.311187" level="INFO">${EMAIL} = qa_20250918091328@yopmail.com</msg>
+<var>${EMAIL}</var>
+<status status="PASS" start="2025-09-18T09:13:28.302353" elapsed="0.008910"/>
+</kw>
+<return>
+<value>${CPF_FAKE}</value>
+<value>${NOME_FAKE}</value>
+<value>${DATA_NASC}</value>
+<value>${TELEFONE}</value>
+<value>${CELULAR}</value>
+<value>${EMAIL}</value>
+<status status="PASS" start="2025-09-18T09:13:28.311474" elapsed="0.002422"/>
+</return>
+<msg time="2025-09-18T09:13:28.315354" level="INFO">${CPF_FAKE} = wruaiwky-45</msg>
+<msg time="2025-09-18T09:13:28.315590" level="INFO">${NOME_FAKE} = Cadastro Contrutorrkvhveml</msg>
+<msg time="2025-09-18T09:13:28.315706" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<msg time="2025-09-18T09:13:28.315811" level="INFO">${EMAIL} = qa_091328@yopmail.com</msg>
+<msg time="2025-09-18T09:13:28.315884" level="INFO">${CELULAR} = 71992091328</msg>
+<msg time="2025-09-18T09:13:28.315962" level="INFO">${TELEFONE} = qa_20250918091328@yopmail.com</msg>
+<var>${CPF_FAKE}</var>
+<var>${NOME_FAKE}</var>
+<var>${DATA_NASC}</var>
+<var>${EMAIL}</var>
+<var>${CELULAR}</var>
+<var>${TELEFONE}</var>
+<status status="PASS" start="2025-09-18T09:13:28.255833" elapsed="0.060184"/>
+</kw>
+<kw name="Dado que estou na home page de cadastro" owner="cadastro_construtor">
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:13:31.474776" level="INFO">Successfully initialized new page object and opened url: https://dev.cotareconstruir.app/</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:13:28.334268" elapsed="3.141256"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:28.328561" elapsed="3.147360"/>
+</kw>
+<kw name="Quando clico em cadastre agora" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:13:31.593392" level="INFO">Waited for Element with selector text=Ainda não tem uma conta? Cadastre agora mesmo. at state visible</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:13:31.479175" elapsed="0.114695"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:13:31.652499" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:13:31.594356" elapsed="0.058572"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:31.654876" level="INFO">Clicks the element 'text=Ainda não tem uma conta? Cadastre agora mesmo.'.</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:31.653528" elapsed="6.465557"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:13:40.121191" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:13:38.119475" elapsed="2.001936"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:31.477045" elapsed="8.644545"/>
+</kw>
+<kw name="E seleciono a opção de cadastro de construtor" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:13:40.141645" level="INFO">Waited for Element with selector text=Qual perfil de conta você gostaria de criar? at state visible</msg>
+<arg>text=Qual perfil de conta você gostaria de criar?</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:13:40.123082" elapsed="0.018942"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:13:40.169661" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Qual perfil de conta você gostaria de criar?</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:13:40.143301" elapsed="0.026792"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:40.174350" level="INFO">Clicks the element 'text=Construtor'.</msg>
+<arg>text=Construtor</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:40.170544" elapsed="1.292711"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:13:43.464867" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:13:41.463713" elapsed="2.001392"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:40.122178" elapsed="3.343136"/>
+</kw>
+<kw name="E preencho as informações para cadastro de construtor" owner="cadastro_construtor">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:43.474284" level="INFO">Fills the text '274.765.090-13' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="cpfOrCnpj"]</arg>
+<arg>${CPF_FAKE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:43.473337" elapsed="1.051706"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:44.526965" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:44.525475" elapsed="1.097447"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:45.624563" level="INFO">Fills the text 'Cadastro Contrutorrkvhveml' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="fullName"]</arg>
+<arg>${NOME_FAKE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:45.623353" elapsed="1.054847"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:46.680368" level="INFO">Clicks the element 'xpath=(//input[@id='birthDate'])[1]'.</msg>
+<arg>xpath=(//input[@id='birthDate'])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:46.679131" elapsed="1.123438"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:47.805837" level="INFO">Fills the text '21/07/1980' in the given field.</msg>
+<arg>xpath=(//input[@id='birthDate'])[1]</arg>
+<arg>${DATA_NASC}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:47.803469" elapsed="1.125009"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:48.930632" level="INFO">Clicks the element 'input#gender'.</msg>
+<arg>input#gender</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:48.929347" elapsed="1.180634"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:13:50.137772" level="INFO">Waited for Element with selector text=Masculino at state visible</msg>
+<arg>text=Masculino</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:13:50.110536" elapsed="0.027807"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:50.143132" level="INFO">Clicks the element 'text= Masculino'.</msg>
+<arg>text= Masculino</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:50.138945" elapsed="1.155411"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:51.297558" level="INFO">Fills the text '71 99132-6395' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="cellphone"]</arg>
+<arg>${CELULAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:51.294894" elapsed="1.053369"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:13:52.349800" level="INFO">Fills the text '71 3461-1234' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="telephone"]</arg>
+<arg>${TELEFONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:52.348684" elapsed="1.051551"/>
+</kw>
+<arg>274.765.090-13</arg>
+<arg>${NOME_FAKE}</arg>
+<arg>21/07/1980</arg>
+<arg>71 99132-6395</arg>
+<arg>71 3461-1234</arg>
+<status status="PASS" start="2025-09-18T09:13:43.471545" elapsed="9.929010"/>
+</kw>
+<kw name="E clico em avançar para Dados Cadastrais" owner="cadastro_construtor">
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:53.403327" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:53.402395" elapsed="1.301223"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:13:59.707483" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:13:54.704245" elapsed="5.003571"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:13:53.401491" elapsed="6.306546"/>
+</kw>
+<kw name="E preencho o endereço para Cadastro de Construtor" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:13:59.722234" level="INFO">Waited for Element with selector xpath=//h5[text()='Endereço'] at state visible</msg>
+<arg>xpath=//h5[text()='Endereço']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:13:59.709927" elapsed="0.012625"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:13:59.741689" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>xpath=//h5[text()='Endereço']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:13:59.722908" elapsed="0.019237"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:13:59.744442" level="INFO">Clicks the element 'xpath=(//input[@id="zipcode"])[1]'.</msg>
+<arg>xpath=(//input[@id="zipcode"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:13:59.742732" elapsed="1.116139"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:00.860443" level="INFO">Fills the text '41350-300' in the given field.</msg>
+<arg>xpath=(//input[@id="zipcode"])[1]</arg>
+<arg>${CEP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:00.859252" elapsed="1.042716"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:01.905820" level="INFO">Clicks the element 'xpath=(//input[@id="number"])[1]'.</msg>
+<arg>xpath=(//input[@id="number"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:01.903295" elapsed="1.161024"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:03.066125" level="INFO">Fills the text '10' in the given field.</msg>
+<arg>xpath=(//input[@id="number"])[1]</arg>
+<arg>${NUMERO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:03.064758" elapsed="1.044703"/>
+</kw>
+<arg>41350-300</arg>
+<arg>10</arg>
+<status status="PASS" start="2025-09-18T09:13:59.708769" elapsed="4.400957"/>
+</kw>
+<kw name="E clico em avançar para Endereço" owner="cadastro_construtor">
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:04.114849" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:04.113958" elapsed="1.261228"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:14:08.377433" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:14:05.375629" elapsed="3.002062"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:04.112944" elapsed="4.264950"/>
+</kw>
+<kw name="E defino a conta para cadastro de construtor com senhas diferentes" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:14:08.390972" level="INFO">Waited for Element with selector text=Seu melhor e-mail at state visible</msg>
+<arg>text=Seu melhor e-mail</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:14:08.380337" elapsed="0.010938"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:14:08.419132" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Seu melhor e-mail</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:14:08.391679" elapsed="0.027924"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:08.423468" level="INFO">Clicks the element 'xpath=//input[@formcontrolname="email"]'.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:08.420732" elapsed="1.126839"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:09.549338" level="INFO">Fills the text 'qa_091328@yopmail.com' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<arg>${EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:09.548073" elapsed="1.034093"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:10.583843" level="INFO">Clicks the element 'xpath=(//input[@id="password"])[1]'.</msg>
+<arg>xpath=(//input[@id="password"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:10.582622" elapsed="1.181036"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:11.766892" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=(//input[@id="password"])[1]</arg>
+<arg>${SENHA_PADRAO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:11.764307" elapsed="1.045617"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:12.811367" level="INFO">Clicks the element 'xpath=(//input[@id="confirmPassword"])[1]'.</msg>
+<arg>xpath=(//input[@id="confirmPassword"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:12.810352" elapsed="1.098447"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:13.910252" level="INFO">Fills the text 'SENHA DIFERENTES' in the given field.</msg>
+<arg>xpath=(//input[@id="confirmPassword"])[1]</arg>
+<arg>${SENHA_DIFERENTES}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:13.909180" elapsed="1.023337"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:14.934870" level="INFO">Clicks the element 'text=Avançar'.</msg>
+<arg>text=Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:14.933306" elapsed="1.085760"/>
+</kw>
+<arg>${EMAIL}</arg>
+<arg>${SENHA_PADRAO}</arg>
+<arg>SENHA DIFERENTES</arg>
+<status status="PASS" start="2025-09-18T09:14:08.379065" elapsed="7.640366"/>
+</kw>
+<kw name="E clico em avançar para definição de conta" owner="cadastro_construtor">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:14:19.028945" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:14:16.026842" elapsed="3.002343"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:19.030564" level="INFO">Clicks the element 'text=Avançar'.</msg>
+<arg>text=Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:19.029543" elapsed="1.083022"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:16.024133" elapsed="4.088682"/>
+</kw>
+<kw name="Então aparece a mensagem de Senhas não conferem" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:14:20.132360" level="INFO">Waited for Element with selector text=Senhas não conferem at state visible</msg>
+<arg>text=Senhas não conferem</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:14:20.115467" elapsed="0.017506"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:14:20.167941" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Senhas não conferem</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:14:20.133435" elapsed="0.035436"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:14:20.378932" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:14:20.169388" elapsed="0.209946"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:20.113449" elapsed="0.266129"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:14:20.577592" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:14:20.400844" elapsed="0.177168"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:14:22.781471" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:14:20.578425" elapsed="2.203486"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:20.399729" elapsed="2.382413"/>
+</kw>
+<doc>Testa o cadastro de um novo construtor com senhas diferentes</doc>
+<tag>CD02</tag>
+<status status="PASS" start="2025-09-18T09:13:17.043741" elapsed="65.741520"/>
+</test>
+<test id="s1-s1-s1-t3" name="Cadastro com Construtor já cadastrado" line="51">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:14:22.901945" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\123b70e2-11b3-42a2-be70-39c1302f7de0"}</msg>
+<msg time="2025-09-18T09:14:24.714390" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\123b70e2-11b3-42a2-be70-39c1302f7de0"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:14:22.899511" elapsed="1.815821"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:14:27.304517" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:14:27.304872" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:14:24.716804" elapsed="2.588513"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:14:34.898013" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-09-18T09:14:27.306325" elapsed="7.592036"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:22.898150" elapsed="12.000420"/>
+</kw>
+<kw name="Gerar Dados Dinâmicos" owner="cadastro_construtor">
+<kw name="Gerar CPF Unico" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:14:34.902054" level="INFO">${RANDOM_STRING} = sbzlnqrn</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.901480" elapsed="0.000634"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:14:34.902244" elapsed="0.000228"/>
+</return>
+<msg time="2025-09-18T09:14:34.902695" level="INFO">${unique_part} = sbzlnqrn</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:14:34.900868" elapsed="0.001874"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:14:34.903348" level="INFO">${CPF_FAKE} = sbzlnqrn-45</msg>
+<var>${CPF_FAKE}</var>
+<arg>${unique_part}-45</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.902955" elapsed="0.000442"/>
+</kw>
+<return>
+<value>${CPF_FAKE}</value>
+<status status="PASS" start="2025-09-18T09:14:34.903610" elapsed="0.000214"/>
+</return>
+<msg time="2025-09-18T09:14:34.904031" level="INFO">${CPF_FAKE} = sbzlnqrn-45</msg>
+<var>${CPF_FAKE}</var>
+<status status="PASS" start="2025-09-18T09:14:34.900310" elapsed="0.003766"/>
+</kw>
+<kw name="Gerar Nome Unico" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:14:34.907498" level="INFO">${RANDOM_STRING} = xroysxct</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.905433" elapsed="0.002179"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:14:34.907833" elapsed="0.000548"/>
+</return>
+<msg time="2025-09-18T09:14:34.908753" level="INFO">${unique_part} = xroysxct</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:14:34.904888" elapsed="0.003926"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:14:34.910212" level="INFO">${NOME} = Cadastro Contrutorxroysxct</msg>
+<var>${NOME}</var>
+<arg>${PREFIX}${unique_part}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.909232" elapsed="0.001055"/>
+</kw>
+<return>
+<value>${NOME}</value>
+<status status="PASS" start="2025-09-18T09:14:34.910457" elapsed="0.000435"/>
+</return>
+<msg time="2025-09-18T09:14:34.911221" level="INFO">${NOME_FAKE} = Cadastro Contrutorxroysxct</msg>
+<var>${NOME_FAKE}</var>
+<status status="PASS" start="2025-09-18T09:14:34.904302" elapsed="0.006973"/>
+</kw>
+<kw name="Gerar Data De Nascimento Aleatória" owner="cadastro_construtor">
+<kw name="Gerar String Aleatória" owner="cadastro_construtor">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-18T09:14:34.917033" level="INFO">${RANDOM_STRING} = rygjrjyb</msg>
+<var>${RANDOM_STRING}</var>
+<arg>${length}</arg>
+<arg>abcdefghijklmnopqrstuvwxyz</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.914386" elapsed="0.002796"/>
+</kw>
+<return>
+<value>${RANDOM_STRING}</value>
+<status status="PASS" start="2025-09-18T09:14:34.917409" elapsed="0.000647"/>
+</return>
+<msg time="2025-09-18T09:14:34.918387" level="INFO">${unique_part} = rygjrjyb</msg>
+<var>${unique_part}</var>
+<arg>8</arg>
+<status status="PASS" start="2025-09-18T09:14:34.912608" elapsed="0.005829"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:14:34.919175" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<var>${DATA_NASC}</var>
+<arg>01/01/1950</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.918739" elapsed="0.000484"/>
+</kw>
+<return>
+<value>${DATA_NASC}</value>
+<status status="PASS" start="2025-09-18T09:14:34.919323" elapsed="0.000206"/>
+</return>
+<msg time="2025-09-18T09:14:34.919741" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<var>${DATA_NASC}</var>
+<status status="PASS" start="2025-09-18T09:14:34.911660" elapsed="0.008130"/>
+</kw>
+<kw name="Gerar Telefone Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:14:34.921177" level="INFO">${timestamp} = 091434</msg>
+<var>${timestamp}</var>
+<arg>result_format=%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.920640" elapsed="0.000596"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:14:34.922196" level="INFO">${TELEFONE} = qa_091434@yopmail.com</msg>
+<var>${TELEFONE}</var>
+<arg>qa_${timestamp}@yopmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.921490" elapsed="0.000771"/>
+</kw>
+<return>
+<value>${TELEFONE}</value>
+<status status="PASS" start="2025-09-18T09:14:34.922768" elapsed="0.000497"/>
+</return>
+<msg time="2025-09-18T09:14:34.923668" level="INFO">${TELEFONE} = qa_091434@yopmail.com</msg>
+<var>${TELEFONE}</var>
+<status status="PASS" start="2025-09-18T09:14:34.920065" elapsed="0.003662"/>
+</kw>
+<kw name="Gerar Celular Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:14:34.929155" level="INFO">${timestamp} = 091434</msg>
+<var>${timestamp}</var>
+<arg>result_format=%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.925396" elapsed="0.003861"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:14:34.930826" level="INFO">${CELULAR} = 71992091434</msg>
+<var>${CELULAR}</var>
+<arg>71992${timestamp}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.929692" elapsed="0.001223"/>
+</kw>
+<return>
+<value>${CELULAR}</value>
+<status status="PASS" start="2025-09-18T09:14:34.931078" elapsed="0.000454"/>
+</return>
+<msg time="2025-09-18T09:14:34.931903" level="INFO">${CELULAR} = 71992091434</msg>
+<var>${CELULAR}</var>
+<status status="PASS" start="2025-09-18T09:14:34.924244" elapsed="0.007718"/>
+</kw>
+<kw name="Gerar Email Unico" owner="cadastro_construtor">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-18T09:14:34.934036" level="INFO">${timestamp} = 20250918091434</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.933419" elapsed="0.000676"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-18T09:14:34.934814" level="INFO">${EMAIL} = qa_20250918091434@yopmail.com</msg>
+<var>${EMAIL}</var>
+<arg>qa_${timestamp}@yopmail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.934348" elapsed="0.000512"/>
+</kw>
+<return>
+<value>${EMAIL}</value>
+<status status="PASS" start="2025-09-18T09:14:34.934965" elapsed="0.000233"/>
+</return>
+<msg time="2025-09-18T09:14:34.935431" level="INFO">${EMAIL} = qa_20250918091434@yopmail.com</msg>
+<var>${EMAIL}</var>
+<status status="PASS" start="2025-09-18T09:14:34.932500" elapsed="0.002977"/>
+</kw>
+<return>
+<value>${CPF_FAKE}</value>
+<value>${NOME_FAKE}</value>
+<value>${DATA_NASC}</value>
+<value>${TELEFONE}</value>
+<value>${CELULAR}</value>
+<value>${EMAIL}</value>
+<status status="PASS" start="2025-09-18T09:14:34.935562" elapsed="0.000212"/>
+</return>
+<msg time="2025-09-18T09:14:34.936890" level="INFO">${CPF_FAKE} = sbzlnqrn-45</msg>
+<msg time="2025-09-18T09:14:34.936974" level="INFO">${NOME_FAKE} = Cadastro Contrutorxroysxct</msg>
+<msg time="2025-09-18T09:14:34.937046" level="INFO">${DATA_NASC} = 01/01/1950</msg>
+<msg time="2025-09-18T09:14:34.937112" level="INFO">${EMAIL} = qa_091434@yopmail.com</msg>
+<msg time="2025-09-18T09:14:34.937180" level="INFO">${CELULAR} = 71992091434</msg>
+<msg time="2025-09-18T09:14:34.937251" level="INFO">${TELEFONE} = qa_20250918091434@yopmail.com</msg>
+<var>${CPF_FAKE}</var>
+<var>${NOME_FAKE}</var>
+<var>${DATA_NASC}</var>
+<var>${EMAIL}</var>
+<var>${CELULAR}</var>
+<var>${TELEFONE}</var>
+<status status="PASS" start="2025-09-18T09:14:34.899414" elapsed="0.037882"/>
+</kw>
+<kw name="Dado que estou na home page de cadastro" owner="cadastro_construtor">
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:14:37.837329" level="INFO">Successfully initialized new page object and opened url: https://dev.cotareconstruir.app/</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:14:34.938938" elapsed="2.898765"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:34.937945" elapsed="2.899954"/>
+</kw>
+<kw name="Quando clico em cadastre agora" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:14:37.929479" level="INFO">Waited for Element with selector text=Ainda não tem uma conta? Cadastre agora mesmo. at state visible</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:14:37.850391" elapsed="0.079703"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:14:37.973210" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:14:37.930551" elapsed="0.043023"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:37.974964" level="INFO">Clicks the element 'text=Ainda não tem uma conta? Cadastre agora mesmo.'.</msg>
+<arg>text=Ainda não tem uma conta? Cadastre agora mesmo.</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:37.973959" elapsed="6.435293"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:14:46.410687" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:14:44.409641" elapsed="2.001404"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:37.849382" elapsed="8.561923"/>
+</kw>
+<kw name="E seleciono a opção de cadastro de construtor" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:14:46.431498" level="INFO">Waited for Element with selector text=Qual perfil de conta você gostaria de criar? at state visible</msg>
+<arg>text=Qual perfil de conta você gostaria de criar?</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:14:46.414563" elapsed="0.017302"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:14:46.461756" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Qual perfil de conta você gostaria de criar?</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:14:46.432275" elapsed="0.030758"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:46.465571" level="INFO">Clicks the element 'text=Construtor'.</msg>
+<arg>text=Construtor</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:46.464088" elapsed="1.235096"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:14:49.700744" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:14:47.699563" elapsed="2.001387"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:46.413086" elapsed="3.288040"/>
+</kw>
+<kw name="E preencho as informações para cadastro de construtor" owner="cadastro_construtor">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:49.703628" level="INFO">Fills the text '274.765.090-13' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="cpfOrCnpj"]</arg>
+<arg>${CPF_FAKE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:49.702776" elapsed="1.058592"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:50.763698" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:50.761850" elapsed="1.115646"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:51.879485" level="INFO">Fills the text 'Cadastro Contrutorxroysxct' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="fullName"]</arg>
+<arg>${NOME_FAKE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:51.878022" elapsed="1.054512"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:52.934010" level="INFO">Clicks the element 'xpath=(//input[@id='birthDate'])[1]'.</msg>
+<arg>xpath=(//input[@id='birthDate'])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:52.932950" elapsed="1.099692"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:54.034357" level="INFO">Fills the text '21/07/1980' in the given field.</msg>
+<arg>xpath=(//input[@id='birthDate'])[1]</arg>
+<arg>${DATA_NASC}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:54.033102" elapsed="1.024421"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:55.058917" level="INFO">Clicks the element 'input#gender'.</msg>
+<arg>input#gender</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:55.057919" elapsed="1.144597"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:14:56.218293" level="INFO">Waited for Element with selector text=Masculino at state visible</msg>
+<arg>text=Masculino</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:14:56.203084" elapsed="0.015619"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:56.220428" level="INFO">Clicks the element 'text= Masculino'.</msg>
+<arg>text= Masculino</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:56.219150" elapsed="1.160802"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:57.382664" level="INFO">Fills the text '71 99132-6395' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="cellphone"]</arg>
+<arg>${CELULAR}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:57.380672" elapsed="1.078479"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:14:58.460726" level="INFO">Fills the text '71 3461-1234' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="telephone"]</arg>
+<arg>${TELEFONE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:58.459540" elapsed="1.038559"/>
+</kw>
+<arg>274.765.090-13</arg>
+<arg>${NOME_FAKE}</arg>
+<arg>21/07/1980</arg>
+<arg>71 99132-6395</arg>
+<arg>71 3461-1234</arg>
+<status status="PASS" start="2025-09-18T09:14:49.701750" elapsed="9.796598"/>
+</kw>
+<kw name="E clico em avançar para Dados Cadastrais" owner="cadastro_construtor">
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:14:59.501409" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:14:59.499894" elapsed="1.379223"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:15:05.880734" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:15:00.879553" elapsed="5.001544"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:14:59.498904" elapsed="6.382449"/>
+</kw>
+<kw name="E preencho o endereço para Cadastro de Construtor" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:15:05.897864" level="INFO">Waited for Element with selector xpath=//h5[text()='Endereço'] at state visible</msg>
+<arg>xpath=//h5[text()='Endereço']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:15:05.884911" elapsed="0.013504"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:15:05.921827" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>xpath=//h5[text()='Endereço']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:15:05.898912" elapsed="0.023351"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:05.928347" level="INFO">Clicks the element 'xpath=(//input[@id="zipcode"])[1]'.</msg>
+<arg>xpath=(//input[@id="zipcode"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:05.922702" elapsed="1.126454"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:07.050597" level="INFO">Fills the text '41350-300' in the given field.</msg>
+<arg>xpath=(//input[@id="zipcode"])[1]</arg>
+<arg>${CEP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:07.049541" elapsed="1.031298"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:08.082889" level="INFO">Clicks the element 'xpath=(//input[@id="number"])[1]'.</msg>
+<arg>xpath=(//input[@id="number"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:08.081558" elapsed="1.161286"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:09.244809" level="INFO">Fills the text '10' in the given field.</msg>
+<arg>xpath=(//input[@id="number"])[1]</arg>
+<arg>${NUMERO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:09.243294" elapsed="1.050117"/>
+</kw>
+<arg>41350-300</arg>
+<arg>10</arg>
+<status status="PASS" start="2025-09-18T09:15:05.883876" elapsed="4.409804"/>
+</kw>
+<kw name="E clico em avançar para Endereço" owner="cadastro_construtor">
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:10.306719" level="INFO">Clicks the element 'text= Avançar'.</msg>
+<arg>text= Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:10.305128" elapsed="1.253926"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:15:14.561131" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:15:11.559447" elapsed="3.001893"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:10.303933" elapsed="4.257599"/>
+</kw>
+<kw name="E defino a conta para cadastro de construtor já cadastrado" owner="cadastro_construtor">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:15:14.577253" level="INFO">Waited for Element with selector text=Seu melhor e-mail at state visible</msg>
+<arg>text=Seu melhor e-mail</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:15:14.563600" elapsed="0.014017"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:15:14.605007" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Seu melhor e-mail</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:15:14.577954" elapsed="0.027772"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:14.608368" level="INFO">Clicks the element 'xpath=//input[@formcontrolname="email"]'.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:14.606735" elapsed="1.127533"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:15.737116" level="INFO">Fills the text 'construtor.lauro@yopmail.com' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<arg>${EMAIL_JA_CADASTRADO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:15.734742" elapsed="1.087457"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:16.824716" level="INFO">Clicks the element 'xpath=(//input[@id="password"])[1]'.</msg>
+<arg>xpath=(//input[@id="password"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:16.822909" elapsed="1.078796"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:17.903260" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=(//input[@id="password"])[1]</arg>
+<arg>${SENHA_PADRAO}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:17.902095" elapsed="1.043142"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:18.947940" level="INFO">Clicks the element 'xpath=(//input[@id="confirmPassword"])[1]'.</msg>
+<arg>xpath=(//input[@id="confirmPassword"])[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:18.946077" elapsed="1.083407"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:20.030925" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=(//input[@id="confirmPassword"])[1]</arg>
+<arg>${CONFIRMAR_SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:20.029851" elapsed="1.027634"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:21.058885" level="INFO">Clicks the element 'text=Avançar'.</msg>
+<arg>text=Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:21.057883" elapsed="1.110796"/>
+</kw>
+<arg>construtor.lauro@yopmail.com</arg>
+<arg>${SENHA_PADRAO}</arg>
+<arg>${CONFIRMAR_SENHA}</arg>
+<status status="PASS" start="2025-09-18T09:15:14.562432" elapsed="7.606735"/>
+</kw>
+<kw name="E clico em avançar para definição de conta" owner="cadastro_construtor">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:15:25.171406" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:15:22.170794" elapsed="3.000825"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:25.173170" level="INFO">Clicks the element 'text=Avançar'.</msg>
+<arg>text=Avançar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:25.172060" elapsed="1.090139"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:22.169856" elapsed="4.092652"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:15:26.445164" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:15:26.264727" elapsed="0.181509"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:15:27.589555" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:15:26.448357" elapsed="1.142109"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:26.263458" elapsed="1.327487"/>
+</kw>
+<doc>Testa o cadastro com o construtor já cadastrado</doc>
+<tag>CD03</tag>
+<status status="PASS" start="2025-09-18T09:14:22.841331" elapsed="64.753785"/>
+</test>
+<doc>Teste de cadastro de construtor</doc>
+<status status="PASS" start="2025-09-18T09:12:00.675493" elapsed="206.938711"/>
+</suite>
+<status status="PASS" start="2025-09-18T09:12:00.671416" elapsed="206.969328"/>
+</suite>
+<suite id="s1-s2" name="Login" source="C:\Projeto Sunter\tests\login">
+<suite id="s1-s2-s1" name="TC01-login" source="C:\Projeto Sunter\tests\login\TC01-login.robot">
+<test id="s1-s2-s1-t1" name="Login de Lojista com Dados Validos" line="19">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:15:28.163798" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\83a8e22d-7ddd-4ad1-9a27-02356d5fb5dc"}</msg>
+<msg time="2025-09-18T09:15:29.253545" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\83a8e22d-7ddd-4ad1-9a27-02356d5fb5dc"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:15:28.161522" elapsed="1.092696"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:15:31.584474" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:15:31.584629" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:15:29.254693" elapsed="2.330215"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:15:37.784312" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/auth</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-09-18T09:15:31.585440" elapsed="6.199423"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:28.160333" elapsed="9.625015"/>
+</kw>
+<kw name="Realizar Login de Lojista" owner="base">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:37.791245" level="INFO">Fills the text 'lojista.lauro@yopmail.com' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:37.788363" elapsed="1.142429"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:38.932860" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:38.931395" elapsed="1.039080"/>
+</kw>
+<arg>${USUARIO_LOJISTA}</arg>
+<arg>${SENHA_PADRAO}</arg>
+<status status="PASS" start="2025-09-18T09:15:37.787015" elapsed="2.183713"/>
+</kw>
+<kw name="E clico em entrar" owner="login">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:15:42.972994" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:15:39.971975" elapsed="3.001231"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:15:42.974642" level="INFO">Clicks the element 'text=Entrar'.</msg>
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:42.973545" elapsed="1.120240"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:39.971260" elapsed="4.122827"/>
+</kw>
+<kw name="Então aparece o painel da Cotar &amp; Construir" owner="login">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:15:44.697598" level="INFO">Waited for Element with selector text=Casa da Construção at state visible</msg>
+<arg>text=Casa da Construção</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:15:44.108985" elapsed="0.589613"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:15:44.791573" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Casa da Construção</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:15:44.712588" elapsed="0.079366"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:15:45.221141" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:15:44.792359" elapsed="0.429596"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:15:48.224942" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:15:45.222607" elapsed="3.003137"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:44.107167" elapsed="4.118859"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:15:48.409438" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-7.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-7.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:15:48.228622" elapsed="0.181440"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:15:49.905285" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:15:48.410540" elapsed="1.495236"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:48.226905" elapsed="1.679198"/>
+</kw>
+<tag>LGN01</tag>
+<status status="PASS" start="2025-09-18T09:15:28.148966" elapsed="21.761044"/>
+</test>
+<test id="s1-s2-s1-t2" name="Login de Construtor com Dados Validos" line="26">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:15:49.966063" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\9e86fcfb-35dd-49cb-879f-0b4d9eee0dbc"}</msg>
+<msg time="2025-09-18T09:15:51.225244" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\9e86fcfb-35dd-49cb-879f-0b4d9eee0dbc"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:15:49.963836" elapsed="1.261798"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:15:53.560779" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:15:53.560924" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:15:51.226041" elapsed="2.335122"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:15:59.299171" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/auth</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-09-18T09:15:53.561489" elapsed="5.738812"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:15:49.962502" elapsed="9.338504"/>
+</kw>
+<kw name="Realizar Login de Construtor" owner="base">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:15:59.307924" level="INFO">Fills the text 'construtor.lauro@yopmail.com' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:15:59.305646" elapsed="1.153568"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:16:00.460708" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="password"]</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:16:00.459631" elapsed="1.052636"/>
+</kw>
+<arg>${USUARIO_CONSTRUTOR}</arg>
+<arg>${SENHA_PADRAO}</arg>
+<status status="PASS" start="2025-09-18T09:15:59.302850" elapsed="2.209743"/>
+</kw>
+<kw name="E clico em entrar" owner="login">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:16:04.515812" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:16:01.514121" elapsed="3.002016"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:16:04.517632" level="INFO">Clicks the element 'text=Entrar'.</msg>
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:16:04.516500" elapsed="1.155698"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:16:01.513235" elapsed="4.159238"/>
+</kw>
+<kw name="Então aparece o painel de Ofertas Cotar &amp; Construir" owner="login">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:16:06.456086" level="INFO">Waited for Element with selector text=Ofertas Cotar &amp; Construir at state visible</msg>
+<arg>text=Ofertas Cotar &amp; Construir</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:16:06.309834" elapsed="0.147348"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:16:06.573221" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Ofertas Cotar &amp; Construir</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:16:06.458090" elapsed="0.116414"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:16:06.777326" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-8.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-8.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:16:06.575541" elapsed="0.202144"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:16:09.779595" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:16:06.778043" elapsed="3.001860"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:16:06.300360" elapsed="3.480016"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:16:09.950110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-9.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-9.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:16:09.782091" elapsed="0.168620"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:16:11.593149" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:16:09.951373" elapsed="1.642869"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:16:09.781120" elapsed="1.813531"/>
+</kw>
+<tag>LGN02</tag>
+<status status="PASS" start="2025-09-18T09:15:49.939664" elapsed="21.671855"/>
+</test>
+<test id="s1-s2-s1-t3" name="Login com Senha em Branco" line="32">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:16:11.830964" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\0f94fc3e-57f6-44ab-810f-be9a8886e1f1"}</msg>
+<msg time="2025-09-18T09:16:12.916369" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\0f94fc3e-57f6-44ab-810f-be9a8886e1f1"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:16:11.829506" elapsed="1.087326"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:16:15.209246" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:16:15.209420" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:16:12.917312" elapsed="2.292411"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:16:26.491271" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-18T09:16:26.491797" level="INFO">See also file:///C:/Projeto%20Sunter/resultados/playwright-log.txt for additional details.</msg>
+<msg time="2025-09-18T09:16:26.493911" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="FAIL" start="2025-09-18T09:16:15.210095" elapsed="11.308092">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-09-18T09:16:11.828638" elapsed="14.690457">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</status>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:16:26.763900" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-10.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-10.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:16:26.550965" elapsed="0.213263"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:16:29.475601" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:16:26.764684" elapsed="2.711386"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:16:26.548203" elapsed="2.928117"/>
+</kw>
+<tag>LGN03</tag>
+<status status="FAIL" start="2025-09-18T09:16:11.679867" elapsed="17.799716">Setup failed:
+TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</status>
+</test>
+<test id="s1-s2-s1-t4" name="Login com Senha Incorreta" line="40">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:16:29.528130" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\af861cb0-6296-47b3-a26c-47aaa02cb775"}</msg>
+<msg time="2025-09-18T09:16:30.790417" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\af861cb0-6296-47b3-a26c-47aaa02cb775"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:16:29.524861" elapsed="1.266003"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:16:33.084796" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:16:33.084981" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:16:30.791442" elapsed="2.293860"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:16:44.318336" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-18T09:16:44.318906" level="INFO">See also file:///C:/Projeto%20Sunter/resultados/playwright-log.txt for additional details.</msg>
+<msg time="2025-09-18T09:16:44.319159" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="FAIL" start="2025-09-18T09:16:33.085924" elapsed="11.238999">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-09-18T09:16:29.521705" elapsed="14.803748">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</status>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:16:44.516906" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-11.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-11.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:16:44.341276" elapsed="0.176014"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:16:48.074333" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:16:44.517691" elapsed="3.557335"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:16:44.339943" elapsed="3.735416"/>
+</kw>
+<tag>LGN04</tag>
+<status status="FAIL" start="2025-09-18T09:16:29.505500" elapsed="18.570692">Setup failed:
+TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth", waiting until "load"
+</status>
+</test>
+<test id="s1-s2-s1-t5" name="Login com Usuário Incorreto" line="47">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:16:48.534009" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 1000.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\397789d6-0a60-41cd-9c8d-c954d6a4b242"}</msg>
+<msg time="2025-09-18T09:16:49.728058" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":1000,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\397789d6-0a60-41cd-9c8d-c954d6a4b242"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:16:48.530415" elapsed="1.198029"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:16:52.020414" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:16:52.020659" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:16:49.729227" elapsed="2.291890"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:16:58.251130" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/auth</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-09-18T09:16:52.021637" elapsed="6.229899"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:16:48.524738" elapsed="9.727004"/>
+</kw>
+<kw name="Dado que estou na home page do site Cotar &amp; Contruir" owner="login">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:16:58.256335" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\581641f5-3253-405d-b681-a93d1b8a3c74"}</msg>
+<msg time="2025-09-18T09:16:59.273781" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\581641f5-3253-405d-b681-a93d1b8a3c74"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:16:58.254203" elapsed="1.020279"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:17:11.003185" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-09-18T09:17:11.004263" level="INFO">See also file:///C:/Projeto%20Sunter/resultados/playwright-log.txt for additional details.</msg>
+<msg time="2025-09-18T09:17:11.004744" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+</msg>
+<arg>url=${ENV}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-09-18T09:16:59.275047" elapsed="11.739363">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-09-18T09:17:11.015147" elapsed="0.000581"/>
+</kw>
+<status status="FAIL" start="2025-09-18T09:16:58.253152" elapsed="12.762942">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+</status>
+</kw>
+<kw name="Quando preencho as informações para login com o usuário incorreto" owner="login">
+<arg>${USUARIO_INCORRETO}</arg>
+<arg>${SENHA_PADRAO}</arg>
+<status status="NOT RUN" start="2025-09-18T09:17:11.131017" elapsed="0.000851"/>
+</kw>
+<kw name="E clico em entrar" owner="login">
+<status status="NOT RUN" start="2025-09-18T09:17:11.231839" elapsed="0.001021"/>
+</kw>
+<kw name="Então aparece a mensagem de erro para usuário incorreto" owner="login">
+<status status="NOT RUN" start="2025-09-18T09:17:11.263195" elapsed="0.009755"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:17:11.373423" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-09-18T09:17:11.373688" level="INFO">See also file:///C:/Projeto%20Sunter/resultados/playwright-log.txt for additional details.</msg>
+<msg time="2025-09-18T09:17:11.374045" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2025-09-18T09:17:11.331344" elapsed="0.048342">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:17:12.336357" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:17:11.380818" elapsed="0.955938"/>
+</kw>
+<status status="FAIL" start="2025-09-18T09:17:11.302396" elapsed="1.034713">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<msg time="2025-09-18T09:17:12.396731" level="INFO">Switching context to context=a0fd2e08-7914-48de-aa85-11780c81a86f in CURRENT</msg>
+<msg time="2025-09-18T09:17:12.430545" level="INFO">Successfully changed active context: context=a0fd2e08-7914-48de-aa85-11780c81a86f</msg>
+<msg time="2025-09-18T09:17:12.718152" level="INFO">Successfully closed Context</msg>
+<tag>LGN05</tag>
+<status status="FAIL" start="2025-09-18T09:16:48.452268" elapsed="23.885601">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://dev.cotareconstruir.app/auth/login", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<test id="s1-s2-s1-t6" name="Login com Usuário em Branco" line="55">
+<kw name="Abrir o navegador" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:17:13.131563" level="INFO">Switching browser to browser=c61e7704-54b4-4e9e-a4e7-649bc8bcf9c8</msg>
+<msg time="2025-09-18T09:17:13.140641" level="INFO">Successfully changed active browser: browser=c61e7704-54b4-4e9e-a4e7-649bc8bcf9c8</msg>
+<msg time="2025-09-18T09:17:13.141147" level="INFO">Reusing existing browser with id: browser=c61e7704-54b4-4e9e-a4e7-649bc8bcf9c8</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>slowMo=00:00:01.00</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:17:13.128980" elapsed="0.012350"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:17:15.383553" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg time="2025-09-18T09:17:15.384120" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:17:13.142968" elapsed="2.241620"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-09-18T09:17:21.430062" level="INFO">Successfully opened URL https://dev.cotareconstruir.app/auth</msg>
+<arg>${ENV}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-09-18T09:17:15.385028" elapsed="6.045355"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:17:13.127771" elapsed="8.302804"/>
+</kw>
+<kw name="Dado que estou na home page do site Cotar &amp; Contruir" owner="login">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:17:21.434787" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\62e4a969-7e20-4b43-bde4-276a3816ba7a"}</msg>
+<msg time="2025-09-18T09:17:22.211337" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\62e4a969-7e20-4b43-bde4-276a3816ba7a"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:17:21.431978" elapsed="0.779716"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:17:32.615223" level="INFO">Successfully initialized new page object and opened url: https://dev.cotareconstruir.app/auth/login</msg>
+<msg time="2025-09-18T09:17:32.615913" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=${ENV}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:17:22.212084" elapsed="10.405449"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:17:35.620663" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:17:32.619112" elapsed="3.002121"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:17:21.431100" elapsed="14.190517"/>
+</kw>
+<kw name="Quando preencho as informações para login e deixo o usuário em branco" owner="login">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:17:35.627672" level="INFO">Fills the text '' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<arg>${EMPTY}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:17:35.626448" elapsed="0.116320"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:17:35.745800" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="password"]</arg>
+<arg>${SENHA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:17:35.743224" elapsed="0.070806"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>${SENHA_PADRAO}</arg>
+<status status="PASS" start="2025-09-18T09:17:35.622580" elapsed="0.191743"/>
+</kw>
+<kw name="E clico em entrar" owner="login">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:17:38.890656" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:17:35.889424" elapsed="3.001440"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:17:38.892296" level="INFO">Clicks the element 'text=Entrar'.</msg>
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:17:38.891202" elapsed="0.079532"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:17:35.887857" elapsed="3.083190"/>
+</kw>
+<kw name="Então aparece a mensagem de erro para usuário em branco" owner="login">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:17:39.010200" level="INFO">Waited for Element with selector text=E-mail obrigatório at state visible</msg>
+<arg>text=E-mail obrigatório</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:17:38.981151" elapsed="0.029486"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:17:39.098970" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=E-mail obrigatório</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:17:39.011177" elapsed="0.088264"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:17:39.335560" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-12.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-12.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:17:39.100020" elapsed="0.236988"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:17:42.339204" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:17:39.337732" elapsed="3.001668"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:17:38.980043" elapsed="3.359913"/>
+</kw>
+<kw name="Fechar o navegador" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:17:42.518012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-13.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-13.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:17:42.344792" elapsed="0.174396"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-09-18T09:17:43.487721" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T09:17:42.520156" elapsed="0.968137"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:17:42.342497" elapsed="1.146038"/>
+</kw>
+<msg time="2025-09-18T09:17:43.535570" level="INFO">Switching context to context=96332639-a067-43ab-a0c5-73b97cd493d3 in CURRENT</msg>
+<msg time="2025-09-18T09:17:43.556594" level="INFO">Successfully changed active context: context=96332639-a067-43ab-a0c5-73b97cd493d3</msg>
+<msg time="2025-09-18T09:17:43.860452" level="INFO">Successfully closed Context</msg>
+<tag>LGN06</tag>
+<status status="PASS" start="2025-09-18T09:17:13.013630" elapsed="30.475331"/>
+</test>
+<doc>Teste de login do lojista no Cotar &amp; Construir</doc>
+<status status="FAIL" start="2025-09-18T09:15:27.878394" elapsed="136.360512"/>
+</suite>
+<status status="FAIL" start="2025-09-18T09:15:27.697376" elapsed="136.609267"/>
+</suite>
+<suite id="s1-s3" name="Recuperar Senha" source="C:\Projeto Sunter\tests\recuperar_senha">
+<suite id="s1-s3-s1" name="TC04-recuperar senha" source="C:\Projeto Sunter\tests\recuperar_senha\TC04-recuperar_senha.robot">
+<test id="s1-s3-s1-t1" name="Recuperação de senha" line="15">
+<kw name="Dado que estou na home do Cotar &amp; Contruir" owner="recuperar_senha">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-09-18T09:17:44.796171" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\74a95714-e39e-425f-bd46-709db3ee474a"}</msg>
+<msg time="2025-09-18T09:17:46.476398" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Projeto Sunter\\resultados\\browser\\traces\\temp\\74a95714-e39e-425f-bd46-709db3ee474a"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-09-18T09:17:44.790057" elapsed="1.686815"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-09-18T09:17:53.445239" level="INFO">Successfully initialized new page object and opened url: https://dev.cotareconstruir.app/auth/login</msg>
+<msg time="2025-09-18T09:17:53.447403" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=${ENV}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-09-18T09:17:46.477376" elapsed="6.971162"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:17:56.471720" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:17:53.449367" elapsed="3.022694"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:17:44.788130" elapsed="11.684162"/>
+</kw>
+<kw name="Quando clico em Esqueceu a senha" owner="recuperar_senha">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:17:56.688036" level="INFO">Waited for Element with selector text=Esqueceu a senha? at state visible</msg>
+<arg>text=Esqueceu a senha?</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:17:56.618270" elapsed="0.070241"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:17:56.750538" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Esqueceu a senha?</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:17:56.688979" elapsed="0.062189"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:17:56.752914" level="INFO">Clicks the element 'text=Esqueceu a senha?'.</msg>
+<arg>text=Esqueceu a senha?</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:17:56.751630" elapsed="5.444245"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:17:56.616969" elapsed="5.580030"/>
+</kw>
+<kw name="E preencho o campo com email cadastrado" owner="recuperar_senha">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:18:05.204144" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:18:02.202734" elapsed="3.001709"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-09-18T09:18:05.206697" level="INFO">Fills the text 'lojista.lauro@yopmail.com' in the given field.</msg>
+<arg>xpath=//input[@formcontrolname="email"]</arg>
+<arg>lojista.lauro@yopmail.com</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:18:05.204902" elapsed="0.047100"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:18:02.201097" elapsed="3.051274"/>
+</kw>
+<kw name="E clico em Recuperar senha" owner="recuperar_senha">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:18:08.284332" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:18:05.281751" elapsed="3.002820"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-09-18T09:18:08.331526" level="INFO">Clicks the element 'text=Recuperar senha'.</msg>
+<arg>text=Recuperar senha</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-09-18T09:18:08.284962" elapsed="0.121067"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:18:05.280126" elapsed="3.126220"/>
+</kw>
+<kw name="Então aparece a mensagem de Recuperação de Senha" owner="recuperar_senha">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-09-18T09:18:08.778658" level="INFO">Waited for Element with selector text=Solicitacao de recuperação gerada com sucesso at state visible</msg>
+<arg>text=Solicitacao de recuperação gerada com sucesso</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-09-18T09:18:08.458355" elapsed="0.320965"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-09-18T09:18:08.815213" level="INFO">Highlighted 1 elements for 5000 ms.</msg>
+<arg>text=Solicitacao de recuperação gerada com sucesso</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-09-18T09:18:08.780358" elapsed="0.035194"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-09-18T09:18:09.183600" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-14.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-14.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-09-18T09:18:08.815962" elapsed="0.367939"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-18T09:18:12.185786" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-18T09:18:09.184455" elapsed="3.001603"/>
+</kw>
+<status status="PASS" start="2025-09-18T09:18:08.456779" elapsed="3.730059"/>
+</kw>
+<msg time="2025-09-18T09:18:12.296064" level="INFO">Switching context to context=603e582c-d76d-4dcf-9670-e1ed35f667d8 in CURRENT</msg>
+<msg time="2025-09-18T09:18:12.324672" level="INFO">Successfully changed active context: context=603e582c-d76d-4dcf-9670-e1ed35f667d8</msg>
+<msg time="2025-09-18T09:18:12.651331" level="INFO">Successfully closed Context</msg>
+<tag>REC04</tag>
+<status status="PASS" start="2025-09-18T09:17:44.763618" elapsed="27.437232"/>
+</test>
+<doc>Teste de Recuperação de Senha no Cotar &amp; Construir</doc>
+<status status="PASS" start="2025-09-18T09:17:44.523171" elapsed="28.169643"/>
+</suite>
+<status status="PASS" start="2025-09-18T09:17:44.324186" elapsed="28.595854"/>
+</suite>
+<status status="FAIL" start="2025-09-18T09:12:00.559401" elapsed="372.632327"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CD01</stat>
+<stat pass="1" fail="0" skip="0">CD02</stat>
+<stat pass="1" fail="0" skip="0">CD03</stat>
+<stat pass="1" fail="0" skip="0">LGN01</stat>
+<stat pass="1" fail="0" skip="0">LGN02</stat>
+<stat pass="0" fail="1" skip="0">LGN03</stat>
+<stat pass="0" fail="1" skip="0">LGN04</stat>
+<stat pass="0" fail="1" skip="0">LGN05</stat>
+<stat pass="1" fail="0" skip="0">LGN06</stat>
+<stat pass="1" fail="0" skip="0">REC04</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="7" fail="3" skip="0">Tests</stat>
+<stat name="Cadastro" id="s1-s1" pass="3" fail="0" skip="0">Tests.Cadastro</stat>
+<stat name="TC03-cadastro contrutor" id="s1-s1-s1" pass="3" fail="0" skip="0">Tests.Cadastro.TC03-cadastro contrutor</stat>
+<stat name="Login" id="s1-s2" pass="3" fail="3" skip="0">Tests.Login</stat>
+<stat name="TC01-login" id="s1-s2-s1" pass="3" fail="3" skip="0">Tests.Login.TC01-login</stat>
+<stat name="Recuperar Senha" id="s1-s3" pass="1" fail="0" skip="0">Tests.Recuperar Senha</stat>
+<stat name="TC04-recuperar senha" id="s1-s3-s1" pass="1" fail="0" skip="0">Tests.Recuperar Senha.TC04-recuperar senha</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
